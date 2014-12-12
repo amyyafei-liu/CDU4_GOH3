@@ -1,0 +1,46 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                    mc:Ignorable="d">
+
+    <ControlTemplate x:Key="FoxboroDisconnected">
+        <Grid Background="#FFABABAB">
+            <Image HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Source="Resources/Images/MainLogo.png"
+                   Stretch="None" Margin="0,0,0,85"/>
+        </Grid>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="FoxboroDetached">
+        <Grid Background="#FFABABAB">
+
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="20"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Image HorizontalAlignment="Center"
+                   VerticalAlignment="Bottom"
+                   Source="Resources/Images/MainLogo.png"
+                   Stretch="None" />
+
+            <StackPanel HorizontalAlignment="Center"
+                       VerticalAlignment="Top" Grid.Row="2">
+                <TextBlock 
+                       FontSize="16"
+                       Text="Connected, waiting for simulator" />
+                <ProgressBar Width="100"
+                         Height="10"
+                         Margin="0,10,0,0"
+                         IsIndeterminate="true" />
+
+            </StackPanel>
+        </Grid>
+    </ControlTemplate>
+
+
+
+</ResourceDictionary>

@@ -1,0 +1,33 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"> 
+<ResourceDictionary.MergedDictionaries>
+<ResourceDictionary Source="Translations\WindowGOH3_UTILS_Translation.xaml" />
+</ResourceDictionary.MergedDictionaries>
+<MimicTemplate x:Key="WindowGOH3_UTILS" UniqueId="WindowGOH3_UTILS">
+<Grid>
+<!--  Graphic Part  -->
+<ContentPresenter x:Name="GRAPHIC" ContentTemplate="{StaticResource WindowGOH3_UTILS_Translation.xaml}" d:IsLocked="True"  />
+<!-- Normal Graphic Layer Path -->
+<Canvas x:Name="GRAPHIC_OVERLAY"/>
+<!-- FOD Part -->
+<Canvas x:Name='FOD' Visibility="{FODBinding}" d:IsLocked="True">
+<!-- Start FOD -->
+<!-- Stop FOD -->
+</Canvas>
+<!-- BL Part -->
+<Canvas x:Name='BL' Visibility='{BLBinding}' >
+	<Mimic x:Name='_IA_FR_2325' Unit='IA_FR_2325' MimicTemplate='{DynamicResource INLETBL_ABB_BL}' HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="471" Canvas.Top="226"/>
+	<Mimic x:Name='_HPsHPSteamteam' Unit='HPsteam' MimicTemplate='{DynamicResource INLETBL_ABB_BL}' HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="471" Canvas.Top="305"/>
+	<Mimic x:Name='_LPsHPSteamteam' Unit='LPsteam' MimicTemplate='{DynamicResource INLETBL_ABB_BL}' HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="471" Canvas.Top="388"/>
+	<Mimic x:Name='_Condensate' Unit='Condensate' MimicTemplate='{DynamicResource OUTLETBL_ABB_BL}' HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="918" Canvas.Top="388"/>
+<!-- Start BL -->
+<!-- Stop BL -->
+</Canvas>
+<!-- FAILURE Part -->
+<Canvas x:Name='FAILURE' Visibility='{FAILUREBinding}' d:IsLocked="True" >
+<!-- Start FAILURE -->
+<!-- Stop FAILURE -->
+</Canvas>
+</Grid>
+</MimicTemplate>
+</ResourceDictionary>

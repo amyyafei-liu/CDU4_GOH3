@@ -1,0 +1,95 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:converters="clr-namespace:Foxboro.Emulation.Controls.Converters;assembly=Foxboro.Emulation.Controls"
+  xmlns:controls="clr-namespace:Foxboro.Emulation.Controls.Controls;assembly=Foxboro.Emulation.Controls"
+ xmlns:common="clr-namespace:Foxboro.Emulation.Controls.Common;assembly=Foxboro.Emulation.Controls"
+ xmlns:canonicalSplineLib="clr-namespace:CanonicalSplineLib;assembly=CanonicalSplineLib" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing" mc:Ignorable="d">
+  <DataTemplate x:Key="WindowCDU4_DESALTERS_PopUp_Translation.xaml"> 
+   <Canvas Width="1000" Height="546.5" Background="White"> 
+
+
+   	<Border Canvas.Left="1.806" Width="1000" Height="547.5" Background="#FFCCCCCC" BorderThickness="1" BorderBrush="#FF000000" />
+<!--  Graphic Part  -->
+   	<canonicalSplineLib:CanonicalSpline Points="918.9,618.23 919.58,622.31 921.54,625.95 924.58,628.75 928.37,630.41 932.49,630.76 936.5,629.74 939.96,627.48 942.49,624.21 943.84,620.3 943.84,616.16 942.49,612.25 939.96,608.98 936.5,606.72 932.49,605.71 928.37,606.05 924.58,607.71 921.54,610.51 919.58,614.15 918.9,618.23" Tension="0.6" IsClosed="false" IsFilled="true" Fill="#FFC3C3C3" StrokeThickness="1" Stroke="#FF717171" Margin="0" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="-529.195" Canvas.Top="-288.5" />
+<!-- Normal Graphic Layer Path -->
+   	<TextBlock Height="32" TextWrapping="Wrap" Text="" Width="32" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="134.806" Canvas.Top="56.5"/>
+<!-- Normal Graphic Layer Path -->
+   	<Canvas x:Name="GRAPHIC_OVERLAY" Height="457" Width="457.833" Canvas.Left="126.806" Canvas.Top="56.5"/>
+   	<Canvas x:Name='FOD' Visibility="{FODBinding}" Height="457" Width="457.833" Canvas.Left="126.806" Canvas.Top="56.5">
+
+
+   		<!-- Stop FOD -->
+
+
+   	</Canvas>
+<!-- BL Part -->
+   	<Canvas x:Name='BL' Visibility='{BLBinding}' Height="457" Width="457.833" Canvas.Left="126.806" Canvas.Top="56.5" >
+   		<!-- Start BL -->
+
+
+   		<!-- Stop BL -->
+
+
+   	</Canvas>
+<!-- FAILURE Part -->
+   	<Canvas x:Name='FAILURE' Visibility='{FAILUREBinding}' Margin="0" Height="457" Canvas.Top="64.5" Width="613.166" Canvas.Left="126.806" >
+   		<!-- Stop FAILURE -->
+
+
+<!-- Start FAILURE -->
+   		<Path Data="M952,208 L920,216" Fill="#FFF4F4F5" Height="9" Canvas.Left="920" Stretch="Fill" Stroke="Black" Canvas.Top="208" Width="33"/>
+   	</Canvas>
+   	<canonicalSplineLib:CanonicalSpline Points="918.9,618.23 919.58,622.31 921.54,625.95 924.58,628.75 928.37,630.41 932.49,630.76 936.5,629.74 939.96,627.48 942.49,624.21 943.84,620.3 943.84,616.16 942.49,612.25 939.96,608.98 936.5,606.72 932.49,605.71 928.37,606.05 924.58,607.71 921.54,610.51 919.58,614.15 918.9,618.23" Tension="0.6" IsClosed="false" IsFilled="true" Fill="#FFC3C3C3" StrokeThickness="1" Stroke="#FF717171" Margin="0" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="-532.195" Canvas.Top="-417.5" />
+   	<Polyline Points="943.64,618.28 935.41,611.96 927.18,624.61 918.96,618.28" StrokeThickness="1" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" Margin="0" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="-529.195" Canvas.Top="-287.5" />
+   	<Polyline Points="943.64,618.28 935.41,611.96 927.18,624.61 918.96,618.28" StrokeThickness="1" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" Margin="0" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="-532.195" Canvas.Top="-418.5" />
+   	<ed:BlockArrow Fill="#FF717171" Height="40.208" Stroke="#FFA0A0A0" StrokeThickness="2" Width="3" Orientation="Up" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="397.889" Canvas.Top="147.458"/>
+   	<ed:BlockArrow Fill="#FF717171" Height="3" Stroke="#FFA0A0A0" StrokeThickness="2" Width="101.666" Orientation="Left" Margin="0" VerticalAlignment="Stretch" Canvas.Left="297.89" Canvas.Top="145" d:LayoutOverrides="Height"/>
+   	<ed:BlockArrow Fill="#FF717171" Height="127.333" Stroke="#FFA0A0A0" StrokeThickness="2" Width="3" Orientation="Down" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="298.056" Canvas.Top="147.333"/>
+   	<ed:BlockArrow Fill="#FF717171" Height="3" Stroke="#FFA0A0A0" StrokeThickness="2" Width="143.166" Orientation="Right" Margin="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Canvas.Left="256.89" Canvas.Top="379.5" d:LayoutOverrides="Height"/>
+   	<ed:BlockArrow Fill="#FF717171" Height="40.208" Stroke="#FFA0A0A0" StrokeThickness="2" Width="3" Orientation="Up" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="399.889" Canvas.Top="276.458"/>
+   	<ed:BlockArrow Fill="#FF717171" Height="3" Stroke="#FFA0A0A0" StrokeThickness="2" Width="142.999" Orientation="Left" Margin="0" VerticalAlignment="Stretch" Canvas.Left="258.057" Canvas.Top="274" d:LayoutOverrides="Height"/>
+   	<ed:BlockArrow Fill="#FF717171" Height="40.208" Stroke="#FFA0A0A0" StrokeThickness="2" Width="3" Orientation="Up" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="399.889" Canvas.Top="341.791"/>
+   	<ed:BlockArrow Fill="#FF717171" Height="61.708" Stroke="#FFA0A0A0" StrokeThickness="2" Width="3" Orientation="Up" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="399.223" Canvas.Top="213.958"/>
+   	<ed:BlockArrow Fill="#FF717171" Height="99.666" Stroke="#FFA0A0A0" StrokeThickness="2" Width="3" Orientation="Up" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="318.389" Canvas.Top="281"/>
+   	<ed:BlockArrow Fill="#FF717171" Height="30.541" Stroke="#FFA0A0A0" StrokeThickness="2" Width="3" Orientation="Up" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="318.389" Canvas.Top="237.125"/>
+   	<ed:BlockArrow Fill="#FF717171" Height="3" Stroke="#FFA0A0A0" StrokeThickness="2" Width="79.166" Orientation="Right" Margin="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Canvas.Left="320.223" Canvas.Top="235.166"/>
+   	<ed:BlockArrow Fill="#FF717171" Height="3" Stroke="#FFA0A0A0" StrokeThickness="2" Width="91.833" Orientation="Right" Margin="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Canvas.Left="412.723" Canvas.Top="198.666"/>
+   	<ed:BlockArrow Fill="#FF717171" Height="3" Stroke="#FFA0A0A0" StrokeThickness="2" Width="65.666" Orientation="Right" Margin="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Canvas.Left="416.223" Canvas.Top="329.166"/>
+   	<ed:BlockArrow Fill="#FF717171" Height="105.125" Stroke="#FFA0A0A0" StrokeThickness="2" Width="3" Orientation="Down" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="452.556" Canvas.Top="201.166"/>
+   	<ed:BlockArrow Fill="#FF717171" Height="129.833" Stroke="#FFA0A0A0" StrokeThickness="2" Width="3" Orientation="Down" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="503.889" Canvas.Top="199.833"/>
+   	<ed:BlockArrow Fill="#FF717171" Height="3" Stroke="#FFA0A0A0" StrokeThickness="2" Width="47.332" Orientation="Left" Margin="0" VerticalAlignment="Stretch" Canvas.Left="406.807" Canvas.Top="305.5" d:LayoutOverrides="Height"/>
+   	<ed:BlockArrow Fill="#FF717171" Height="3" Stroke="#FFA0A0A0" StrokeThickness="2" Width="47.332" Orientation="Left" Margin="0" VerticalAlignment="Stretch" Canvas.Left="347.932" Canvas.Top="305.875" d:LayoutOverrides="Height"/>
+   	<ed:BlockArrow Fill="#FF717171" Height="23.458" Stroke="#FFA0A0A0" StrokeThickness="2" Width="3" Orientation="Down" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="347.056" Canvas.Top="307.166"/>
+   	<ed:BlockArrow Fill="#FF717171" Height="3" Stroke="#FFA0A0A0" StrokeThickness="2" Width="60.915" Orientation="Right" Margin="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Canvas.Left="328.807" Canvas.Top="329.833"/>
+   	<ed:BlockArrow Fill="#FF717171" Height="3" Stroke="#FFA0A0A0" StrokeThickness="2" Width="105.5" Orientation="Right" Margin="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Canvas.Left="481.384" Canvas.Top="329.332"/>
+   	<ed:BlockArrow Fill="#FF717171" Height="140.458" Stroke="#FFA0A0A0" StrokeThickness="2" Width="3" Orientation="Down" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="504.056" Canvas.Top="330.875"/>
+   	<canonicalSplineLib:CanonicalSpline Points="918.9,618.23 919.58,622.31 921.54,625.95 924.58,628.75 928.37,630.41 932.49,630.76 936.5,629.74 939.96,627.48 942.49,624.21 943.84,620.3 943.84,616.16 942.49,612.25 939.96,608.98 936.5,606.72 932.49,605.71 928.37,606.05 924.58,607.71 921.54,610.51 919.58,614.15 918.9,618.23" Tension="0.6" IsClosed="false" IsFilled="true" Fill="#FFC3C3C3" StrokeThickness="1" Stroke="#FF717171" Margin="0" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="-343.695" Canvas.Top="-148.23" />
+   	<Polyline Points="943.64,618.28 935.41,611.96 927.18,624.61 918.96,618.28" StrokeThickness="1" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" Margin="0" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="-344.198" Canvas.Top="-147.863" />
+   	<ed:BlockArrow Fill="#FF717171" Height="3" Stroke="#FFA0A0A0" StrokeThickness="2" Width="68.666" Orientation="Right" Margin="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Canvas.Left="505.89" Canvas.Top="469.472"/>
+   	<ed:BlockArrow Fill="#FF717171" Height="3" Stroke="#FFA0A0A0" StrokeThickness="2" Width="240.938" Orientation="Right" Margin="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Canvas.Left="600.056" Canvas.Top="468.472"/>
+   	<ed:BlockArrow Fill="#FF717171" Height="88.75" Stroke="#FFA0A0A0" StrokeThickness="2" Width="3" Orientation="Down" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="673.226" Canvas.Top="379.583"/>
+   	<ed:BlockArrow Fill="#FF717171" Height="3" Stroke="#FFA0A0A0" StrokeThickness="2" Width="225.999" Orientation="Left" Margin="0" VerticalAlignment="Stretch" Canvas.Left="506.307" Canvas.Top="377.666"/>
+   	<ed:BlockArrow Fill="#FF717171" Height="118.083" Stroke="#FFA0A0A0" StrokeThickness="2" Width="3" Orientation="Up" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="586.226" Canvas.Top="212.583"/>
+   	<MimicFoxboro MimicTemplate="{DynamicResource Foxboro_AirFan}" UnitName="EZ2131" UnitType="Foxboro_AirFan" 
+   		Param0="True" 
+   		Param1="True" 
+   		Param2="False" 
+   		Param3="False" 
+   		Canvas.Left="619.22" Canvas.Top="192.337" Width="60" Height="32" RenderTransformOrigin="0,1"/>
+   	<ed:BlockArrow Fill="#FF717171" Height="3" Stroke="#FFA0A0A0" StrokeThickness="2" Width="30.833" Orientation="Right" Margin="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Canvas.Left="588.223" Canvas.Top="210.166"/>
+   	<ed:BlockArrow Fill="#FF717171" Height="3" Stroke="#FFA0A0A0" StrokeThickness="2" Width="52.666" Orientation="Right" Margin="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Canvas.Left="679.056" Canvas.Top="209.833"/>
+   	<ed:BlockArrow Fill="#FF717171" Height="167.5" Stroke="#FFA0A0A0" StrokeThickness="2" Width="3" Orientation="Down" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="730.389" Canvas.Top="210.833"/>
+   	<TextBlock Height="12" Margin="0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="9.333" Canvas.Left="416.526" Canvas.Top="174.167"><Run Language="zh-cn" Text="EZ2121A"/></TextBlock> 
+   	<TextBlock Height="12" Margin="0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="9.333" Canvas.Left="425.86" Canvas.Top="312.834"><Run Language="zh-cn" Text="EZ2121B"/></TextBlock>
+   	<TextBlock Height="12" Margin="0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="9.333" Canvas.Left="603.193" Canvas.Top="444.834" RenderTransformOrigin="0.499,0.306"><Run Language="zh-cn" Text="EZ2127"/></TextBlock>
+   	<ed:BlockArrow Fill="#FF717171" Height="3" Stroke="#FFA0A0A0" StrokeThickness="2" Width="143.749" Orientation="Right" Margin="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Canvas.Left="163.14" Canvas.Top="329.833"/>
+   	<ed:BlockArrow Fill="#FF717171" Height="3" Stroke="#FFA0A0A0" StrokeThickness="2" Width="78.582" Orientation="Right" Margin="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Canvas.Left="307.643" Canvas.Top="199.166"/>
+   	<ed:BlockArrow Fill="#FF717171" Height="3" Stroke="#FFA0A0A0" StrokeThickness="2" Width="94.582" Orientation="Right" Margin="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Canvas.Left="196.643" Canvas.Top="199.666"/>
+   	<ed:BlockArrow Fill="#FF717171" Height="130.041" Stroke="#FFA0A0A0" StrokeThickness="2" Width="3" Orientation="Up" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="195.889" Canvas.Top="200.125"/>
+   	<TextBlock Height="12" Margin="0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="9.333" Canvas.Left="110.526" Canvas.Top="324.917"><Run Language="zh-cn" Text="DZ2101A/B"/></TextBlock>
+   	<TextBlock Height="12" Margin="0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="9.333" Canvas.Left="214.41" Canvas.Top="269"><Run Language="zh-cn" Text="DZ2101C"/></TextBlock>
+   	<TextBlock Height="12" Margin="0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="9.333" Canvas.Left="179.776" Canvas.Top="374.667" RenderTransformOrigin="0.479,0.653" Width="76.397"><Run Language="zh-cn" Text="PZ2111&amp;PZ2122"/></TextBlock>
+   	<TextBlock Height="12" Margin="0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="9.333" Canvas.Left="880.526" Canvas.Top="463.472"><Run Language="zh-cn" Text="SEWER"/></TextBlock>
+
+
+  </Canvas> 
+</DataTemplate></ResourceDictionary>
+

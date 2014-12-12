@@ -1,0 +1,254 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+xmlns:CanonicalSplineLib="clr-namespace:CanonicalSplineLib;assembly=CanonicalSplineLib" 
+xmlns:converters="clr-namespace:Foxboro.Emulation.Controls.Converters;assembly=Foxboro.Emulation.Controls"
+xmlns:controls="clr-namespace:Foxboro.Emulation.Controls.Controls;assembly=Foxboro.Emulation.Controls"
+xmlns:common="clr-namespace:Foxboro.Emulation.Controls.Common;assembly=Foxboro.Emulation.Controls"
+xmlns:canonicalSplineLib="clr-namespace:CanonicalSplineLib;assembly=CanonicalSplineLib"
+xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+mc:Ignorable="d"> 
+<ResourceDictionary.MergedDictionaries>
+<ResourceDictionary Source="Translations\WindowCDU4_CRUDE_OVERHEAD_Translation.xaml" />
+<ResourceDictionary Source="..\custom.xaml" />
+</ResourceDictionary.MergedDictionaries>
+<MimicTemplate x:Key="WindowCDU4_CRUDE_OVERHEAD" UniqueId="WindowCDU4_CRUDE_OVERHEAD">
+<Grid>
+<!--  Graphic Part  -->
+<ContentPresenter x:Name="GRAPHIC" ContentTemplate="{StaticResource WindowCDU4_CRUDE_OVERHEAD_Translation.xaml}" d:IsLocked="True"  />
+<!-- Normal Graphic Layer Path -->
+<Canvas x:Name="GRAPHIC_OVERLAY"/>
+<ed:BlockArrow Fill="#FF717171" Height="3" Canvas.Left="555.321" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="98.645" Width="110.747" Orientation="Left" HorizontalAlignment="Left" Margin="411.844,0,0,91.794" VerticalAlignment="Bottom"/>
+<ed:BlockArrow Fill="#FF717171" Height="3" Canvas.Left="459.312" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="98.083" Width="156.754" Orientation="Left" HorizontalAlignment="Left" Margin="459.072,98.565,0,0" VerticalAlignment="Top" d:LayoutOverrides="Height"/>
+	<Canvas x:Name='FOD' Visibility="{FODBinding}">
+		<!-- Start FOD -->
+		<MimicFoxboro MimicTemplate="{DynamicResource Foxboro_Data}" UnitName="FTPZ2158" UnitType="Foxboro_Data" 
+			Width="55" Height="27" RenderTransformOrigin="0,1" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="571.495" Canvas.Top="56.699"/>
+
+	
+<!-- Start FOD -->
+		<Mimic x:Name='_1101MV03' Unit='1101MV03' MimicTemplate='{DynamicResource HANDVALVE_ABB_FOD}' Canvas.Top='580.309' Canvas.Left='887.816' RenderTransformOrigin="0.5,0.5">
+			<Mimic.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform Angle="90"/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Mimic.RenderTransform>
+		</Mimic>
+		<Mimic x:Name='_1102MV06' Unit='1102MV06' MimicTemplate='{DynamicResource HANDVALVE_ABB_FOD}' Canvas.Top='621.332' Canvas.Left='1132.197'/>
+		<Mimic x:Name='_2103MV09' Unit='2103MV09' MimicTemplate='{DynamicResource HANDVALVE_ABB_FOD}' Canvas.Top='518.663' Canvas.Left='672.254' RenderTransformOrigin="0.5,0.5">
+			<Mimic.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform Angle="90"/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Mimic.RenderTransform>
+		</Mimic>
+		<Mimic x:Name='_2103DRN01' Unit='2103DRN01' MimicTemplate='{DynamicResource OUTLETBL_ABB_FOD}' Canvas.Top='495.25' Canvas.Left='434.664'/>
+		<Mimic x:Name='_2103DRN02' Unit='2103DRN02' MimicTemplate='{DynamicResource OUTLETBL_ABB_FOD}' Canvas.Top='295.333' Canvas.Left='862.851'/>
+		<Mimic x:Name='_2103DRN03' Unit='2103DRN03' MimicTemplate='{DynamicResource OUTLETBL_ABB_FOD}' Canvas.Top='677.667' Canvas.Left='434.664'/>
+		<Mimic x:Name='_RVZ1010A' Unit='RVZ1010A' Param0="barg" MimicTemplate='{DynamicResource PSV_ABB_FOD}' Canvas.Top='107.331' Canvas.Left='667.755'/>
+		<Mimic x:Name='_RVZ1010S' Unit='RVZ1010S' Param0="barg" MimicTemplate='{DynamicResource PSV_ABB_FOD}' Canvas.Top='107.99' Canvas.Left='714.807'/>
+		<Mimic x:Name='_2104MV11' Unit='2104MV11' MimicTemplate='{DynamicResource HANDVALVE_ABB_FOD}' Canvas.Top='162' Canvas.Left='355' RenderTransformOrigin="0.5,0.5">
+			<Mimic.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform Angle="90"/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Mimic.RenderTransform>
+		</Mimic>
+		<Mimic x:Name='_2104MV12' Unit='2104MV12' MimicTemplate='{DynamicResource HANDVALVE_ABB_FOD}' Canvas.Top='204.5' Canvas.Left='355' RenderTransformOrigin="0.5,0.5">
+			<Mimic.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform Angle="-90"/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Mimic.RenderTransform>
+		</Mimic>
+
+		<ed:BlockArrow Fill="#FF717171" Height="80" Canvas.Left="344.739" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="147.834" Width="3" Orientation="Down"/>
+		<ed:BlockArrow Fill="#FF717171" Height="35" Canvas.Left="229.5" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="111.334" Width="3" Orientation="Up"/>
+		<ed:BlockArrow Fill="#FF717171" Height="3" Canvas.Left="229.978" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="108.5" Width="150" Orientation="Right"/>
+		<ed:BlockArrow Fill="#FF717171" Height="75.666" Canvas.Left="376.978" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="111.334" Width="3" Orientation="Down"/>
+		<ed:BlockArrow Fill="#FF717171" Height="35" Canvas.Left="226.978" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="227.5" Width="3" Orientation="Down"/>
+		<ed:BlockArrow Fill="#FF717171" Height="3" Canvas.Left="227.978" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="260.834" Width="150" Orientation="Right"/>
+		<ed:BlockArrow Fill="#FF717171" Height="75" Canvas.Left="376.978" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="188.334" Width="3" Orientation="Up"/>
+		<Mimic x:Name='_2104MV08' Unit='2104MV08' MimicTemplate='{DynamicResource HANDVALVE_ABB_FOD}' Canvas.Top='141.5' Canvas.Left='250'/>
+		<Mimic x:Name='_2104MV09' Unit='2104MV09' MimicTemplate='{DynamicResource HANDVALVE_ABB_FOD}' Canvas.Top='222' Canvas.Left='250'/>
+
+		<Mimic x:Name='_2104MV07' Unit='2104MV07' MimicTemplate='{DynamicResource HANDVALVE_ABB_FOD}' Canvas.Top='104.83' Canvas.Left='285.998'/>
+		<Mimic x:Name='_2104MV10' Unit='2104MV10' MimicTemplate='{DynamicResource HANDVALVE_ABB_FOD}' Canvas.Top='256.334' Canvas.Left='285.998'/>
+		<Mimic x:Name='_2104MV16' Unit='2104MV16' MimicTemplate='{DynamicResource HANDVALVE_ABB_FOD}' Canvas.Top='180.333' Canvas.Left='338.664' RenderTransformOrigin="0.5,0.5">
+	
+			<Mimic.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform Angle="89.778"/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Mimic.RenderTransform>
+		</Mimic>
+		<ed:BlockArrow Fill="#FF717171" Height="3" Canvas.Left="458.645" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="126.665" Width="53.501" Orientation="Left"/>
+		<ed:BlockArrow Fill="#FF717171" Height="29" Canvas.Left="509.013" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="99.584" Width="3" Orientation="Down"/>
+		<Mimic x:Name='_2104MV18' Unit='2104MV18' MimicTemplate='{DynamicResource HANDVALVE_ABB_FOD}' Canvas.Top='94.414' Canvas.Left='475.5'/>
+		<Mimic x:Name='_2104MV17' Unit='2104MV17' MimicTemplate='{DynamicResource HANDVALVE_ABB_FOD}' Canvas.Top='122.995' Canvas.Left='475.5'/>
+		<ed:BlockArrow Fill="#FF717171" Height="3" Canvas.Left="136.003" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="382.001" Width="113.501" Orientation="Left"/>
+		<ed:BlockArrow Fill="#FF717171" Height="72.356" Canvas.Left="250" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="312.645" Width="3" Orientation="Down"/>
+		<Mimic x:Name='_2103MV01' Unit='2103MV01' MimicTemplate='{DynamicResource HANDVALVE_ABB_FOD}' Canvas.Top='378.997' Canvas.Left='189.331'/>
+		<ed:BlockArrow Fill="#FF717171" Height="87.667" Canvas.Left="697.644" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="157.998" Width="3" Orientation="Up"/>
+		<ed:BlockArrow Fill="#FF717171" Height="3" Canvas.Left="700.644" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="197.835" Width="45.665" Orientation="Right"/>
+		<ed:BlockArrow Fill="#FF717171" Height="39.837" Canvas.Left="745.309" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="159.998" Width="3" Orientation="Up"/>
+		<ed:BlockArrow Fill="#FF717171" Height="3" Canvas.Left="712.643" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="144.668" Width="17.33" Orientation="Right"/>
+		<ed:BlockArrow Fill="#FF717171" Height="3" Canvas.Left="760.641" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="144.668" Width="17.33" Orientation="Right"/>
+		<ed:BlockArrow Fill="#FF717171" Height="39.837" Canvas.Left="726.973" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="105.497" Width="3" Orientation="Up"/>
+		<ed:BlockArrow Fill="#FF717171" Height="39.837" Canvas.Left="776.86" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="106.164" Width="3" Orientation="Up"/>
+		<ed:BlockArrow Fill="#FF717171" Height="14.643" Canvas.Left="776.86" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="294.001" Width="3" Orientation="Down"/>
+		<ed:BlockArrow Fill="#FF717171" Height="3" Canvas.Left="779.86" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="305.644" Width="80.332" Orientation="Right"/>
+		<Mimic x:Name='_2103MV06' Unit='2103MV06' MimicTemplate='{DynamicResource HANDVALVE_ABB_FOD}' Canvas.Top='301.974' Canvas.Left='811.331'/>
+		<ed:BlockArrow Fill="#FF717171" Height="3" Canvas.Left="456.312" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="505.332" Width="67.186" Orientation="Left"/>
+		<Mimic x:Name='_2103MV08' Unit='2103MV08' MimicTemplate='{DynamicResource HANDVALVE_ABB_FOD}' Canvas.Top='501.662' Canvas.Left='485'/>
+		<ed:BlockArrow Fill="#FF717171" Height="3" Canvas.Left="456.312" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="686.665" Width="67.186" Orientation="Left"/>
+		<Mimic x:Name='_2103MV07' Unit='2103MV07' MimicTemplate='{DynamicResource HANDVALVE_ABB_FOD}' Canvas.Top='682.663' Canvas.Left='485'/>
+		<ed:BlockArrow Fill="#FF717171" Height="13.311" Canvas.Left="760.641" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="295.333" Width="3" Orientation="Down"/>
+		<ed:BlockArrow Fill="#FF717171" Height="215.978" Canvas.Left="760.641" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="318.656" Width="3" Orientation="Down"/>
+		<ed:BlockArrow Fill="#FF717171" Height="38.978" Canvas.Left="760.641" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="545.333" Width="3" Orientation="Down"/>
+		<ed:BlockArrow Fill="#FF717171" Height="3" Canvas.Left="551.976" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="581.978" Width="208.997" Orientation="Left"/>
+		<ed:BlockArrow Fill="#FF717171" Height="6.644" Canvas.Left="549.643" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="583.644" Width="3" Orientation="Down"/>
+		<Mimic x:Name='_2103MV03' Unit='2103MV03' MimicTemplate='{DynamicResource HANDVALVE_ABB_FOD}' Canvas.Top='578.287' Canvas.Left='651.996'/>
+		<ed:BlockArrow Fill="#FF717171" Height="3" Canvas.Left="167.167" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="581.978" Width="237.168" Orientation="Right"/>
+		<ed:BlockArrow Fill="#FF717171" Height="3" Canvas.Left="415.335" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="581.978" Width="87.835" Orientation="Right"/>
+		<ed:BlockArrow Fill="#FF717171" Height="6.644" Canvas.Left="501.619" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="583.644" Width="3" Orientation="Down"/>
+		<Mimic x:Name='_2103MV05' Unit='2103MV05' MimicTemplate='{DynamicResource HANDVALVE_ABB_FOD}' Canvas.Top='578.287' Canvas.Left='269.332'/>
+		<ed:BlockArrow Fill="#FF717171" Height="3" Canvas.Left="683.754" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="476.645" Width="72.887" Orientation="Right"/>
+		<ed:BlockArrow Fill="#FF717171" Height="3" Canvas.Left="768.977" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="476.645" Width="140.22" Orientation="Right"/>
+		<ed:BlockArrow Fill="#FF717171" Height="3" Canvas.Left="1006.977" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="659.666" Width="229.553" Orientation="Right"/>
+		<ed:BlockArrow Fill="#FF717171" Height="32.998" Canvas.Left="1006.977" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="626.668" Width="3" Orientation="Down"/>
+		<TextBlock Height="25.333" TextWrapping="Wrap" Width="68" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="801.833" Canvas.Top="94.832"><Run Language="zh-cn" Text="TO DZ3004"/></TextBlock>
+		<Mimic x:Name='_1102MV05' Unit='1102MV05' MimicTemplate='{DynamicResource HANDVALVE_ABB_FOD}' Canvas.Top='656.662' Canvas.Left='1132.863'/>
+		<TextBlock Height="25.333" TextWrapping="Wrap" Width="68" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="95.834" Canvas.Top="572.832"><Run Language="zh-cn" Text="DZ2151/2"/></TextBlock>
+		<TextBlock Height="16.666" TextWrapping="Wrap" Width="59.333" HorizontalAlignment="Stretch" Margin="0" Canvas.Left="75.834" Canvas.Top="374.166"><Run Language="zh-cn" Text="DZ2179"/></TextBlock>
+		<TextBlock Height="25.333" TextWrapping="Wrap" Width="68" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="913.833" Canvas.Top="465.499"><Run Language="zh-cn" Text="TO PZ2103"/></TextBlock>
+		<TextBlock Height="25.333" TextWrapping="Wrap" Width="68" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="1239.833" Canvas.Top="646.832"><Run Language="zh-cn" Text="DZ2151"/></TextBlock>
+		<ed:BlockArrow Fill="#FF717171" Height="3" Canvas.Left="729.973" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="105.497" Width="64.998" Orientation="Right"/>
+		<MimicFoxboro MimicTemplate="{DynamicResource Foxboro_PidaStd}" UnitName="PICZ1001" UnitType="Foxboro_PidaStd" 
+			Param0="1" 
+			Canvas.Left="271" Canvas.Top="330.5" Width="70" Height="39.48" RenderTransformOrigin="0,1"/>
+		<MimicFoxboro MimicTemplate="{DynamicResource Foxboro_ValveAll}" UnitName="PVZ1001" UnitType="Foxboro_ValveAll" 
+			Param0="False" 
+			Param1="False" 
+			Param2="False" 
+			Canvas.Left="271" Canvas.Top="296" Width="30" Height="30.5" RenderTransformOrigin="0,1"/>
+		<ed:BlockArrow Fill="#FF717171" Height="3" Canvas.Left="612.814" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="505.332" Width="67.186" Orientation="Left"/>
+		<Mimic x:Name='_2103MV10' Unit='2103MV10' MimicTemplate='{DynamicResource HANDVALVE_ABB_FOD}' Canvas.Top='501.25' Canvas.Left='646'/>
+		<Mimic x:Name='_2103DRN04' Unit='2103DRN04' MimicTemplate='{DynamicResource OUTLETBL_ABB_FOD}' Canvas.Top='495.25' Canvas.Left='584.664'/>
+		<TextBlock Height="0" Canvas.Left="464" TextWrapping="Wrap" Text="TextBlock" Canvas.Top="56" Width="0"/>
+		<TextBlock Height="14.97" Canvas.Left="491.143" TextWrapping="Wrap" Text="s" Canvas.Top="124.5" Width="10.357" RenderTransformOrigin="0.273,0.466"/>
+		<TextBlock Height="14.97" Canvas.Left="561.143" TextWrapping="Wrap" Text="s" Canvas.Top="124.5" Width="10.357" RenderTransformOrigin="0.273,0.466"/>
+		<TextBlock Height="14.97" Canvas.Left="508.643" TextWrapping="Wrap" Text="s" Canvas.Top="229" Width="10.357" RenderTransformOrigin="0.273,0.466"/>
+		<TextBlock Height="14.97" Canvas.Left="508.643" TextWrapping="Wrap" Text="s" Canvas.Top="229" Width="10.357" RenderTransformOrigin="0.273,0.466"/>
+		<TextBlock Height="14.97" Canvas.Left="578.643" TextWrapping="Wrap" Text="s" Canvas.Top="229" Width="10.357" RenderTransformOrigin="0.273,0.466"/>
+		<ed:BlockArrow Fill="#FF717171" Height="3" Canvas.Left="575.124" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="89.418" Width="15.851" Orientation="Left" RenderTransformOrigin="0.5,0.5">
+			<ed:BlockArrow.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform Angle="90"/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</ed:BlockArrow.RenderTransform>
+		</ed:BlockArrow>
+		<Mimic x:Name='_2103MV02' Unit='2103MV02' MimicTemplate='{DynamicResource HANDVALVE_ABB_FOD}' Canvas.Top='658.299' Canvas.Left='425.064' RenderTransformOrigin="0.382,1.469"/>	
+	
+		<!-- Stop FOD -->
+
+	</Canvas>
+<!-- BL Part -->
+<Canvas x:Name='BL' Visibility='{BLBinding}' d:IsLocked="True" >
+<!-- Start BL -->
+
+<!-- Stop BL -->
+</Canvas>
+<!-- FAILURE Part -->
+<Canvas x:Name='FAILURE' Visibility='{FAILUREBinding}' Margin="-8,0,8,0" d:IsLocked="True" >
+<!-- Start FAILURE -->
+<Mimic x:Name='_PZ2158_FAILURE' Unit='PZ2158' MimicTemplate='{DynamicResource PUMP_ABB_FAILURE}' Canvas.Top='79.332' Canvas.Left='512'/>
+<Mimic x:Name='_EZ2112AG_FAILURE' Unit='EZ2112AG' MimicTemplate='{DynamicResource EXCHANGER_ABB_FAILURE}' Canvas.Top='170.666' Canvas.Left='457.998'/>
+<Mimic x:Name='_EZ2112HN_FAILURE' Unit='EZ2112HN' MimicTemplate='{DynamicResource AIRCOOLER_ABB_FAILURE}' Canvas.Top='189.998' Canvas.Left='457.998'/>
+<Mimic x:Name='_EZ2102AB_FAILURE' Unit='EZ2102AB' MimicTemplate='{DynamicResource EXCHANGER_ABB_FAILURE}' Canvas.Top='117.999' Canvas.Left='291.999'/>
+<Mimic x:Name='_EZ2102CD_FAILURE' Unit='EZ2102CD' MimicTemplate='{DynamicResource EXCHANGER_ABB_FAILURE}' Canvas.Top='197.999' Canvas.Left='291.999'/>
+<Mimic x:Name='_PZ2151A_FAILURE' Unit='PZ2151A' MimicTemplate='{DynamicResource PUMP_ABB_FAILURE}' Canvas.Top='531.498' Canvas.Left='692.5'/>
+<Mimic x:Name='_PZ2151B_FAILURE' Unit='PZ2151B' MimicTemplate='{DynamicResource PUMP_ABB_FAILURE}' Canvas.Top='531.998' Canvas.Left='730.166'/>
+
+
+
+
+
+<!-- Stop FAILURE -->
+
+</Canvas>
+	<MimicFoxboro MimicTemplate="{DynamicResource Foxboro_FeedBackV}" UnitName="EZ2112A" UnitType="Foxboro_FeedBackV" 
+	Width="20" Height="25" RenderTransformOrigin="0,1" Margin="467.572,139,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Unit="TEST1" Canvas.Left="463.163" Canvas.Top="175.835"/>
+<MimicFoxboro MimicTemplate="{DynamicResource Foxboro_FeedBackV}" UnitName="EZ2112B" UnitType="Foxboro_FeedBackV" 
+	Width="20" Height="25" RenderTransformOrigin="0,1" Margin="503.579,139,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Unit="TEST1" Canvas.Left="478.997" Canvas.Top="175.835"/>
+<MimicFoxboro MimicTemplate="{DynamicResource Foxboro_FeedBackV}" UnitName="EZ2112C" UnitType="Foxboro_FeedBackV" 
+	Width="20" Height="25" RenderTransformOrigin="0,1" Margin="485.836,139,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Unit="TEST1" Canvas.Left="494.83" Canvas.Top="175.835"/>
+<MimicFoxboro MimicTemplate="{DynamicResource Foxboro_FeedBackV}" UnitName="EZ2112D" UnitType="Foxboro_FeedBackV" 
+	Width="20" Height="25" RenderTransformOrigin="0,1" Margin="522.832,139,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Unit="TEST1" Canvas.Left="510.328" Canvas.Top="175.835"/>
+<MimicFoxboro MimicTemplate="{DynamicResource Foxboro_FeedBackV}" UnitName="EZ2112E" UnitType="Foxboro_FeedBackV" 
+	Width="20" Height="25" RenderTransformOrigin="0,1" Margin="539.8,139,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Unit="TEST1" Canvas.Left="526.336" Canvas.Top="175.835"/>
+<MimicFoxboro MimicTemplate="{DynamicResource Foxboro_FeedBackV}" UnitName="EZ2112F" UnitType="Foxboro_FeedBackV" 
+	Width="20" Height="25" RenderTransformOrigin="0,1" Margin="557.814,139,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Unit="TEST1" Canvas.Left="463.163" Canvas.Top="201.5"/>
+<MimicFoxboro MimicTemplate="{DynamicResource Foxboro_FeedBackV}" UnitName="EZ2112G" UnitType="Foxboro_FeedBackV" 
+	Width="20" Height="25" RenderTransformOrigin="0,1" Margin="576.48,138.667,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Unit="TEST1" Canvas.Left="479.161" Canvas.Top="201.5"/>
+<ed:BlockArrow Fill="#FF717171" Height="85.345" Canvas.Left="408.335" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="575.989" Width="3" Orientation="Up" HorizontalAlignment="Left" Margin="408.844,0,0,92.5" VerticalAlignment="Bottom" d:LayoutOverrides="Width"/>
+<ed:BlockArrow Fill="#FF717171" Height="246.667" Canvas.Left="409.002" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="318.656" Width="3" Orientation="Up" HorizontalAlignment="Left" Margin="408.5,318.666,0,192.666" d:LayoutOverrides="Width"/>
+<ed:BlockArrow Fill="#FF717171" Height="3" Canvas.Left="412.332" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="269.515" Width="126" Orientation="Right" HorizontalAlignment="Left" Margin="411.666,270.436,0,0" VerticalAlignment="Top" d:LayoutOverrides="Height"/>
+<ed:BlockArrow Fill="#FF717171" Height="37.128" Canvas.Left="408.975" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="271.516" Width="3" Orientation="Up" HorizontalAlignment="Left" Margin="408.844,271.436,0,0" VerticalAlignment="Top" d:LayoutOverrides="Width, Height"/>
+<ed:BlockArrow Fill="#FF717171" Height="3" Canvas.Left="554.644" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="269.515" Width="65" Orientation="Right" HorizontalAlignment="Left" Margin="551.314,269.935,0,0" VerticalAlignment="Top" d:LayoutOverrides="Height"/>
+<ed:BlockArrow Fill="#FF717171" Height="173.87" Canvas.Left="604.322" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="98.645" Width="3" Orientation="Up" HorizontalAlignment="Left" Margin="615.826,98.565,0,0" VerticalAlignment="Top" d:LayoutOverrides="Width, Height"/>
+<ed:BlockArrow Fill="#FF717171" Height="89.022" Canvas.Left="456.312" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="98.645" Width="3" Orientation="Down" HorizontalAlignment="Left" Margin="456.072,98.565,0,0" VerticalAlignment="Top" d:LayoutOverrides="Width, Height"/>
+<MimicFoxboro MimicTemplate="{DynamicResource Foxboro_FeedBackV}" UnitName="EZ2112H" UnitType="Foxboro_FeedBackV" 
+	Width="20" Height="25" RenderTransformOrigin="0,1" Margin="463.072,208,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Unit="TEST1"/>
+<MimicFoxboro MimicTemplate="{DynamicResource Foxboro_FeedBackV}" UnitName="EZ2112I" UnitType="Foxboro_FeedBackV" 
+	Width="20" Height="25" RenderTransformOrigin="0,1" Margin="481.071,208,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Unit="TEST1"/>
+<MimicFoxboro MimicTemplate="{DynamicResource Foxboro_FeedBackV}" UnitName="EZ2112J" UnitType="Foxboro_FeedBackV" 
+	Width="20" Height="25" RenderTransformOrigin="0,1" Margin="499.344,208,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Unit="TEST1"/>
+<MimicFoxboro MimicTemplate="{DynamicResource Foxboro_FeedBackV}" UnitName="EZ2112K" UnitType="Foxboro_FeedBackV" 
+	Width="20" Height="25" RenderTransformOrigin="0,1" Margin="517.666,208,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Unit="TEST1"/>
+<MimicFoxboro MimicTemplate="{DynamicResource Foxboro_FeedBackV}" UnitName="EZ2112L" UnitType="Foxboro_FeedBackV" 
+	Width="20" Height="25" RenderTransformOrigin="0,1" Margin="535.665,208,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Unit="TEST1"/>
+<MimicFoxboro MimicTemplate="{DynamicResource Foxboro_FeedBackV}" UnitName="EZ2112M" UnitType="Foxboro_FeedBackV" 
+	Width="20" Height="25" RenderTransformOrigin="0,1" Margin="554.331,208,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Unit="TEST1"/>
+<MimicFoxboro MimicTemplate="{DynamicResource Foxboro_FeedBackV}" UnitName="EZ2112N" UnitType="Foxboro_FeedBackV" 
+	Width="20" Height="25" RenderTransformOrigin="0,1" Margin="572.995,208,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Unit="TEST1"/>
+<MimicFoxboro MimicTemplate="{DynamicResource Foxboro_FeedBackV}" UnitName="PZ2151A" UnitType="Foxboro_FeedBackV" 
+				Width="20" Height="25" RenderTransformOrigin="0,1" Margin="0,0,619.813,186.167" VerticalAlignment="Bottom" HorizontalAlignment="Right" Unit="TEST1"/>
+<MimicFoxboro MimicTemplate="{DynamicResource Foxboro_FeedBackV}" UnitName="PZ2151B" UnitType="Foxboro_FeedBackV" 
+				Width="20" Height="25" RenderTransformOrigin="0,1" Margin="0,0,596.147,186.167" VerticalAlignment="Bottom" HorizontalAlignment="Right" Unit="TEST1"/>
+<MimicFoxboro MimicTemplate="{DynamicResource Foxboro_PmpCmpr}" UnitName="PZ2158" UnitType="Foxboro_PmpCmpr" 
+	Param0="False" 
+	Width="70" RenderTransformOrigin="0,1" Margin="452.567,245.045,0,0" HorizontalAlignment="Left" Unit="TEST2" Height="53.3" VerticalAlignment="Top">
+	<MimicFoxboro.RenderTransform>
+		<TransformGroup>
+			<ScaleTransform/>
+			<SkewTransform/>
+			<RotateTransform Angle="-0.243"/>
+			<TranslateTransform/>
+		</TransformGroup>
+	</MimicFoxboro.RenderTransform>
+</MimicFoxboro>
+
+	
+</Grid>
+</MimicTemplate>
+</ResourceDictionary>

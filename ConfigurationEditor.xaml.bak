@@ -1,0 +1,256 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+                    xmlns:viewModels="clr-namespace:Foxboro.Emulation.Controls.ViewModels;assembly=Foxboro.Emulation.Controls">
+
+
+
+    <DataTemplate x:Key="ConfigurationEditor.xaml">
+        <Grid Margin="0,0,5,0">
+            <Grid.DataContext>
+                <viewModels:CrossRefLinkViewModel />
+            </Grid.DataContext>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+
+            </Grid.RowDefinitions>
+            <Grid Width="250"
+                  IsEnabled="{UniversalBinding CurrentUnitInfos}"
+                  Visibility="{Binding IsConfigEditorVisible,
+                                       Converter={BoolToVisibilityCollapsedConverter}}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.ColumnSpan="2"
+                           Margin="5"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Center"
+                           Text="SYNOPTIC/MODEL LINK CONFIGURATION"
+                           TextWrapping="Wrap" />
+
+                <CheckBox Name="IsErrorIgnored"
+                          Grid.Row="1"
+                          Grid.ColumnSpan="2"
+                          Margin="5"
+                          VerticalAlignment="Center"
+                          IsChecked="{Binding CurrentUnitInfos.IgnoreError}">
+                    Ignore Error
+                </CheckBox>
+                <TextBlock Grid.Row="2"
+                           Margin="5"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Center"
+                           Text="Page"
+                           TextWrapping="Wrap" />
+                <TextBox Grid.Row="2"
+                         Grid.Column="1"
+                         Margin="0,5"
+                         Text="{Binding CurrentUnitInfos.PageName}" />
+
+                <TextBlock Grid.Row="3"
+                           Margin="5"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Center"
+                           Text="Visual ID"
+                           TextWrapping="Wrap" />
+                <TextBlock Grid.Row="3"
+                           Grid.Column="1"
+                           Margin="0,5"
+                           Text="{Binding CurrentUnitInfos.VisualID}" />
+                <TextBlock Grid.Row="4"
+                           Margin="5"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Center"
+                           Text="Original tag name"
+                           TextWrapping="Wrap" />
+                <TextBlock Grid.Row="4"
+                           Grid.Column="1"
+                           Margin="0,5"
+                           Text="{Binding CurrentUnitInfos.HtmlTagName}" />
+                <TextBlock Grid.Row="5"
+                           Margin="5"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Center"
+                           Text="Html cp_op"
+                           TextWrapping="Wrap" Visibility="Collapsed"/>
+                <TextBlock Grid.Row="5"
+                           Grid.Column="1"
+                           Margin="0,5"
+                           Text="{Binding CurrentUnitInfos.HtmlCpOp}" Visibility="Collapsed" />
+                <TextBlock Grid.Row="6"
+                           Margin="5"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Center"
+                           Text="Model tag name"
+                           TextWrapping="Wrap" />
+                <Grid Grid.Row="6" Grid.Column="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <TextBox Margin="0,5"
+                             IsEnabled="{Binding Path=IsChecked,
+                                                 ElementName=IsErrorIgnored,
+                                                 Converter={Not}}"
+                             Text="{Binding CurrentUnitInfos.ModelTagName}" />
+                    <Button Grid.Column="1"
+                            Margin="5,5,0,5"
+                            Command="{Binding BrowseModelUnits}"
+                            Content="..."
+                            Padding="5,0" />
+                </Grid>
+                <TextBlock Grid.Row="7"
+                           Margin="5"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Center"
+                           Text="Parameter name"
+                           TextWrapping="Wrap" />
+                <!--
+                    <TextBox Grid.Row="7"
+                    Grid.Column="1"
+                    Margin="0,5"
+                    IsEnabled="{Binding Path=IsChecked,
+                    ElementName=IsErrorIgnored,
+                    Converter={Not}}"
+                    Text="{Binding CurrentUnitInfos.ParameterName}" />
+                -->
+                <ComboBox Grid.Row="7"
+                          Grid.Column="1"
+                          Margin="0,5"
+                          ItemsSource="{Binding ParametersList}"
+                          SelectedValue="{Binding CurrentUnitInfos.ParameterName}" 
+                           IsEnabled="{Binding Path=IsChecked,
+                                             ElementName=IsErrorIgnored,
+                                             Converter={Not}}" IsEditable="True"/>
+
+                <TextBlock Grid.Row="8"
+                           Margin="5"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Center"
+                           Text="Model tag name 1"
+                           TextWrapping="Wrap" />
+                <!--<TextBox Grid.Row="8"
+                         Grid.Column="1"
+                         Margin="0,5"
+                         IsEnabled="{Binding Path=IsChecked,
+                                             ElementName=IsErrorIgnored,
+                                             Converter={Not}}"
+                         Text="{Binding CurrentUnitInfos.ModelTagName1}" />-->
+                <Grid Grid.Row="8" Grid.Column="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <TextBox Margin="0,5"
+                             IsEnabled="{Binding Path=IsChecked,
+                                                 ElementName=IsErrorIgnored,
+                                                 Converter={Not}}"
+                             Text="{Binding CurrentUnitInfos.ModelTagName1}" />
+                    <Button Grid.Column="1"
+                            Margin="5,5,0,5"
+                            Command="{Binding BrowseModelUnits1}"
+                            Content="..."
+                            Padding="5,0" />
+                </Grid>
+
+
+
+                <TextBlock Grid.Row="9"
+                           Margin="5"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Center"
+                           Text="Parameter name 1"
+                           TextWrapping="Wrap" />
+                <!--<TextBox Grid.Row="9"
+                         Grid.Column="1"
+                         Margin="0,5"
+                         IsEnabled="{Binding Path=IsChecked,
+                                             ElementName=IsErrorIgnored,
+                                             Converter={Not}}"
+                         Text="{Binding CurrentUnitInfos.ParameterName1}" />-->
+                <ComboBox Grid.Row="9"
+                          Grid.Column="1"
+                          Margin="0,5"
+                          ItemsSource="{Binding ParametersList1}"
+                          SelectedValue="{Binding CurrentUnitInfos.ParameterName1}" 
+                           IsEnabled="{Binding Path=IsChecked,
+                                             ElementName=IsErrorIgnored,
+                                             Converter={Not}}" IsEditable="True"/>
+                <TextBlock Grid.Row="10"
+                           Margin="5"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Center"
+                           Text="Model tag name 2"
+                           TextWrapping="Wrap" />
+                <!--<TextBox Grid.Row="10"
+                         Grid.Column="1"
+                         Margin="0,5"
+                         IsEnabled="{Binding Path=IsChecked,
+                                             ElementName=IsErrorIgnored,
+                                             Converter={Not}}"
+                         Text="{Binding CurrentUnitInfos.ModelTagName2}" />-->
+                <Grid Grid.Row="10" Grid.Column="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <TextBox Margin="0,5"
+                             IsEnabled="{Binding Path=IsChecked,
+                                                 ElementName=IsErrorIgnored,
+                                                 Converter={Not}}"
+                             Text="{Binding CurrentUnitInfos.ModelTagName2}" />
+                    <Button Grid.Column="1"
+                            Margin="5,5,0,5"
+                            Command="{Binding BrowseModelUnits2}"
+                            Content="..."
+                            Padding="5,0" />
+                </Grid>
+                <TextBlock Grid.Row="11"
+                           Margin="5"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Center"
+                           Text="Parameter name 2"
+                           TextWrapping="Wrap" />
+                <!--<TextBox Grid.Row="11"
+                         Grid.Column="1"
+                         Margin="0,5"
+                         IsEnabled="{Binding Path=IsChecked,
+                                             ElementName=IsErrorIgnored,
+                                             Converter={Not}}"
+                         Text="{Binding CurrentUnitInfos.ParameterName2}" />-->
+                <ComboBox Grid.Row="11"
+                          Grid.Column="1"
+                          Margin="0,5"
+                          ItemsSource="{Binding ParametersList2}"
+                          SelectedValue="{Binding CurrentUnitInfos.ParameterName2}" 
+                           IsEnabled="{Binding Path=IsChecked,
+                                             ElementName=IsErrorIgnored,
+                                             Converter={Not}}" IsEditable="True"/>
+
+
+
+            </Grid>
+
+
+        </Grid>
+    </DataTemplate>
+</ResourceDictionary>

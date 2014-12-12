@@ -1,0 +1,43 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+xmlns:CanonicalSplineLib="clr-namespace:CanonicalSplineLib;assembly=CanonicalSplineLib" 
+xmlns:converters="clr-namespace:Foxboro.Emulation.Controls.Converters;assembly=Foxboro.Emulation.Controls"
+xmlns:controls="clr-namespace:Foxboro.Emulation.Controls.Controls;assembly=Foxboro.Emulation.Controls"
+xmlns:common="clr-namespace:Foxboro.Emulation.Controls.Common;assembly=Foxboro.Emulation.Controls"
+xmlns:canonicalSplineLib="clr-namespace:CanonicalSplineLib;assembly=CanonicalSplineLib"
+mc:Ignorable="d"> 
+<ResourceDictionary.MergedDictionaries>
+<ResourceDictionary Source="Translations\WindowCDU4_UTILS_Translation.xaml" />
+<ResourceDictionary Source="..\custom.xaml" />
+</ResourceDictionary.MergedDictionaries>
+<MimicTemplate x:Key="WindowCDU4_UTILS" UniqueId="WindowCDU4_UTILS">
+<Grid>
+<!--  Graphic Part  -->
+<ContentPresenter x:Name="GRAPHIC" ContentTemplate="{StaticResource WindowCDU4_UTILS_Translation.xaml}" d:IsLocked="True"  />
+<!-- Normal Graphic Layer Path -->
+<Canvas x:Name="GRAPHIC_OVERLAY"/>
+<!-- FOD Part -->
+<Canvas x:Name='FOD' Visibility="{FODBinding}">
+<!-- Start FOD -->
+<!-- Stop FOD -->
+</Canvas>
+<!-- BL Part -->
+<Canvas x:Name='BL' Visibility='{BLBinding}' >
+	<Mimic x:Name='BFW' Unit='BFW' MimicTemplate='{DynamicResource INLETBL_ABB_FOD}' HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="430" Canvas.Top="580.25"/>
+	<Mimic x:Name='CWS' Unit='CWS' MimicTemplate='{DynamicResource INLETBL_ABB_FOD}' HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="430" Canvas.Top="436.25"/>
+	<Mimic x:Name='LPSTEAM' Unit='LPSTEAM' MimicTemplate='{DynamicResource INLETBL_ABB_FOD}' HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="430" Canvas.Top="636.25"/>
+	<Mimic x:Name='IA' Unit='IA' MimicTemplate='{DynamicResource INLETBL_ABB_FOD}' HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="430" Canvas.Top="530.25"/>
+	<Mimic x:Name='HPSTEAM' Unit='HPSTEAM' MimicTemplate='{DynamicResource INLETBL_ABB_FOD}' HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="430" Canvas.Top="689.25"/>
+<!-- Start BL -->
+</Canvas>
+<Canvas x:Name='FAILURE' Visibility='{FAILUREBinding}' >
+<!-- Stop BL -->
+	<!-- Start FAILURE -->
+	<!-- Stop FAILURE -->
+</Canvas>
+<!-- FAILURE Part -->
+</Grid>
+</MimicTemplate>
+</ResourceDictionary>

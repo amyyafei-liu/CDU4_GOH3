@@ -1,0 +1,144 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:converters="clr-namespace:Foxboro.Emulation.Controls.Converters;assembly=Foxboro.Emulation.Controls"
+  xmlns:controls="clr-namespace:Foxboro.Emulation.Controls.Controls;assembly=Foxboro.Emulation.Controls"
+ xmlns:common="clr-namespace:Foxboro.Emulation.Controls.Common;assembly=Foxboro.Emulation.Controls"
+ xmlns:canonicalSplineLib="clr-namespace:CanonicalSplineLib;assembly=CanonicalSplineLib">
+  <DataTemplate x:Key="WindowDHT4_PUMP_MONITORING_STABILISER_FEED_Translation.xaml"> 
+   <Canvas Width="1333" Height="758" Background="White">  
+<Border Canvas.Left="0" Canvas.Top="0" Width="1333" Height="758" Background="#FFCCCCCC" BorderThickness="1" BorderBrush="#FF000000" /> 
+
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_TitleBar}" UnitName="DHT4 PUMP MONITORING STABILISER FEED" UnitType="Foxboro_TitleBar" 
+Param0="DHT4 PUMP MONITORING STABILISER FEED" 
+Canvas.Left="0.22" Canvas.Top="11.02" Width="1333" Height="19.79" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<Border Canvas.Left="609.76" Canvas.Top="271.98" Width="30" Height="5" Background="#FFC3C3C3" BorderThickness="1" BorderBrush="#FF939393" /> 
+
+<Border Canvas.Left="639.76" Canvas.Top="269.48" Width="2.5" Height="10" Background="#FFC3C3C3" BorderThickness="1" BorderBrush="#FF939393" /> 
+
+<Border Canvas.Left="587.26" Canvas.Top="294.48" Width="10" Height="10" Background="#FFC3C3C3" BorderThickness="1" BorderBrush="#FF939393" /> 
+
+<Border Canvas.Left="529.76" Canvas.Top="294.48" Width="10" Height="10" Background="#FFC3C3C3" BorderThickness="1" BorderBrush="#FF939393" /> 
+
+<Border Canvas.Left="519.76" Canvas.Top="254.48" Width="87.5" Height="40.03" Background="#FFC3C3C3" BorderThickness="1" BorderBrush="#FF939393" /> 
+
+<Border Canvas.Left="642.26" Canvas.Top="264.47" Width="5" Height="20" Background="#FFC3C3C3" BorderThickness="1" BorderBrush="#FF939393" /> 
+
+<Border Canvas.Left="702.26" Canvas.Top="264.47" Width="5.11" Height="20" Background="#FFC3C3C3" BorderThickness="1" BorderBrush="#FF939393" /> 
+
+<Border Canvas.Left="707.37" Canvas.Top="269.48" Width="2.55" Height="10" Background="#FFC3C3C3" BorderThickness="1" BorderBrush="#FF939393" /> 
+
+<Border Canvas.Left="607.26" Canvas.Top="269.48" Width="2.5" Height="10" Background="#FFC3C3C3" BorderThickness="1" BorderBrush="#FF939393" /> 
+
+<Border Canvas.Left="517.26" Canvas.Top="269.48" Width="2.5" Height="10" Background="#FFC3C3C3" BorderThickness="1" BorderBrush="#FF939393" /> 
+
+<Polyline Points="647.51,254.49 647.51,294.49 702.51,294.49 702.51,254.49 647.51,254.49 " Fill="#FFC3C3C3" StrokeThickness="1" Stroke="#FF939393" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="647.51,294.49 640.01,304.49 710.01,304.49 702.51,294.49 647.51,294.49 " Fill="#FFC3C3C3" StrokeThickness="1" Stroke="#FF939393" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Border Canvas.Left="609.76" Canvas.Top="469" Width="30" Height="5" Background="#FFC3C3C3" BorderThickness="1" BorderBrush="#FF939393" /> 
+
+<Border Canvas.Left="639.76" Canvas.Top="466.5" Width="2.5" Height="10" Background="#FFC3C3C3" BorderThickness="1" BorderBrush="#FF939393" /> 
+
+<Border Canvas.Left="587.26" Canvas.Top="491.5" Width="10" Height="10" Background="#FFC3C3C3" BorderThickness="1" BorderBrush="#FF939393" /> 
+
+<Border Canvas.Left="529.76" Canvas.Top="491.5" Width="10" Height="10" Background="#FFC3C3C3" BorderThickness="1" BorderBrush="#FF939393" /> 
+
+<Border Canvas.Left="519.76" Canvas.Top="451.5" Width="87.5" Height="40.03" Background="#FFC3C3C3" BorderThickness="1" BorderBrush="#FF939393" /> 
+
+<Border Canvas.Left="642.26" Canvas.Top="461.5" Width="5" Height="20" Background="#FFC3C3C3" BorderThickness="1" BorderBrush="#FF939393" /> 
+
+<Border Canvas.Left="702.26" Canvas.Top="461.5" Width="5.11" Height="20" Background="#FFC3C3C3" BorderThickness="1" BorderBrush="#FF939393" /> 
+
+<Border Canvas.Left="707.37" Canvas.Top="466.5" Width="2.55" Height="10" Background="#FFC3C3C3" BorderThickness="1" BorderBrush="#FF939393" /> 
+
+<Border Canvas.Left="607.26" Canvas.Top="466.5" Width="2.5" Height="10" Background="#FFC3C3C3" BorderThickness="1" BorderBrush="#FF939393" /> 
+
+<Border Canvas.Left="517.26" Canvas.Top="466.5" Width="2.5" Height="10" Background="#FFC3C3C3" BorderThickness="1" BorderBrush="#FF939393" /> 
+
+<Polyline Points="647.51,451.51 647.51,491.51 702.51,491.51 702.51,451.51 647.51,451.51 " Fill="#FFC3C3C3" StrokeThickness="1" Stroke="#FF939393" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="647.51,491.51 640.01,501.51 710.01,501.51 702.51,491.51 647.51,491.51 " Fill="#FFC3C3C3" StrokeThickness="1" Stroke="#FF939393" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="715.01,431.51 715.01,441.51 " StrokeDashArray="6 3" StrokeThickness="1" Stroke="#FFADADAD" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<TextBlock Canvas.Left="577.51" Canvas.Top="64" Width="Auto" Height="Auto" Text="PZ2153 A/B" FontSize="10" Foreground="#FF606060" /> 
+
+<Polyline Points="705.01,461.76 715.01,441.51 " StrokeDashArray="6 3" StrokeThickness="1" Stroke="#FFADADAD" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="635.01,234.49 635.01,244.57 " StrokeDashArray="6 3" StrokeThickness="1" Stroke="#FFADADAD" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="715.01,234.87 715.01,244.49 " StrokeDashArray="6 3" StrokeThickness="1" Stroke="#FFADADAD" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="635.01,244.49 645.01,264.49 " StrokeDashArray="6 3" StrokeThickness="1" Stroke="#FFADADAD" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="705.01,264.49 715.01,244.49 " StrokeDashArray="6 3" StrokeThickness="1" Stroke="#FFADADAD" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="635.01,431.51 635.01,441.59 " StrokeDashArray="6 3" StrokeThickness="1" Stroke="#FFADADAD" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="635.01,441.51 645.01,461.76 " StrokeDashArray="6 3" StrokeThickness="1" Stroke="#FFADADAD" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<TextBlock Canvas.Left="676.41" Canvas.Top="462.58" Width="Auto" Height="Auto" Text="B" FontSize="12" Foreground="#FF606060" TextAlignment="Center" /> 
+
+<TextBlock Canvas.Left="676.41" Canvas.Top="267.91" Width="Auto" Height="Auto" Text="A" FontSize="12" Foreground="#FF606060" TextAlignment="Center" /> 
+
+<Button Content="BLEND" Canvas.Left="4.35" Canvas.Top="547.16" Width="90" Height="18" Style = "{DynamicResource FBButtonStyleRight}" Foreground = "#FF606060" Background = "#FFCCCCCC" BorderBrush= "#FF606060" 
+>
+<i:Interaction.Triggers>
+<i:EventTrigger EventName="Click">
+<ChainViewAction MimicTemplateKey="Window" />
+</i:EventTrigger>
+</i:Interaction.Triggers>
+</Button>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_AlarmStd}" UnitName="TagName" UnitType="Foxboro_AlarmStd" 
+Param0="PZ2153" 
+Param1="HT" 
+Canvas.Left="602.37" Canvas.Top="94.77" Width="48" Height="25.63" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_AlarmStd}" UnitName="TagName" UnitType="Foxboro_AlarmStd" 
+Param0="PAZ2092" 
+Param1="PL" 
+Canvas.Left="624.58" Canvas.Top="405.05" Width="48" Height="25.63" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_AlarmStd}" UnitName="TagName" UnitType="Foxboro_AlarmStd" 
+Param0="PAZ2093" 
+Param1="PL" 
+Canvas.Left="705.18" Canvas.Top="405.05" Width="48" Height="25.63" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_AlarmStd}" UnitName="TagName" UnitType="Foxboro_AlarmStd" 
+Param0="TAHZ20112" 
+Param1="HT" 
+Canvas.Left="549.94" Canvas.Top="453.87" Width="48" Height="25.63" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_BlockNameEquipement}" UnitName="TagName" UnitType="Foxboro_BlockNameEquipement" 
+Param0="MPZ2153B" 
+Canvas.Left="538.5" Canvas.Top="508.43" Width="48" Height="12" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_BlockNameEquipement}" UnitName="TagName" UnitType="Foxboro_BlockNameEquipement" 
+Param0="PZ2153B" 
+Canvas.Left="650.96" Canvas.Top="508.15" Width="48" Height="12" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_AlarmStd}" UnitName="TagName" UnitType="Foxboro_AlarmStd" 
+Param0="TAHZ20111" 
+Param1="HT" 
+Canvas.Left="549.94" Canvas.Top="257.1" Width="48" Height="25.63" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_AlarmStd}" UnitName="TagName" UnitType="Foxboro_AlarmStd" 
+Param0="PAZ2090" 
+Param1="PL" 
+Canvas.Left="624.58" Canvas.Top="208.28" Width="48" Height="25.63" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_AlarmStd}" UnitName="TagName" UnitType="Foxboro_AlarmStd" 
+Param0="PAZ2091" 
+Param1="PL" 
+Canvas.Left="705.18" Canvas.Top="208.28" Width="48" Height="25.63" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_BlockNameEquipement}" UnitName="TagName" UnitType="Foxboro_BlockNameEquipement" 
+Param0="PZ2153A" 
+Canvas.Left="650.96" Canvas.Top="311.38" Width="48" Height="12" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_BlockNameEquipement}" UnitName="TagName" UnitType="Foxboro_BlockNameEquipement" 
+Param0="MPZ2153A" 
+Canvas.Left="538.7" Canvas.Top="311.66" Width="48" Height="12" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+
+  </Canvas> 
+</DataTemplate></ResourceDictionary>

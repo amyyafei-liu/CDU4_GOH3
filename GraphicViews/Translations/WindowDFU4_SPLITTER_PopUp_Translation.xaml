@@ -1,0 +1,63 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:converters="clr-namespace:Foxboro.Emulation.Controls.Converters;assembly=Foxboro.Emulation.Controls"
+  xmlns:controls="clr-namespace:Foxboro.Emulation.Controls.Controls;assembly=Foxboro.Emulation.Controls"
+ xmlns:common="clr-namespace:Foxboro.Emulation.Controls.Common;assembly=Foxboro.Emulation.Controls"
+ xmlns:canonicalSplineLib="clr-namespace:CanonicalSplineLib;assembly=CanonicalSplineLib" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing" mc:Ignorable="d">
+  <DataTemplate x:Key="WindowDFU4_SPLITTER_PopUp_Translation.xaml"> 
+   <Canvas Width="514" Height="424.5" Background="White"> 
+
+
+   	<Border Canvas.Left="1.139" Width="515" Height="427.5" Background="#FFCCCCCC" BorderThickness="1" BorderBrush="#FF000000" Canvas.Top="-2.333" />
+<!--  Graphic Part  -->
+<!-- Normal Graphic Layer Path -->
+   	<TextBlock Height="32" TextWrapping="Wrap" Text="" Width="32" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="134.806" Canvas.Top="56.5"/>
+<!-- Normal Graphic Layer Path -->
+   	<Canvas x:Name="GRAPHIC_OVERLAY" Height="457" Width="457.833" Canvas.Left="126.806" Canvas.Top="56.5"/>
+   	<Canvas x:Name='FOD' Visibility="{FODBinding}" Height="457" Width="457.833" Canvas.Left="126.806" Canvas.Top="56.5">
+
+
+   		<!-- Stop FOD -->
+
+
+   	</Canvas>
+<!-- BL Part -->
+   	<Canvas x:Name='BL' Visibility='{BLBinding}' Height="457" Width="457.833" Canvas.Left="126.806" Canvas.Top="56.5" >
+   		<!-- Start BL -->
+
+
+   		<!-- Stop BL -->
+
+
+   	</Canvas>
+<!-- FAILURE Part -->
+   	<Canvas x:Name='FAILURE' Visibility='{FAILUREBinding}' Margin="0" Height="457" Canvas.Top="-7.5" Width="613.166" Canvas.Left="-10.194" >
+   		<!-- Stop FAILURE -->
+
+
+<!-- Start FAILURE -->
+   		<Path Data="M952,208 L920,216" Fill="#FFF4F4F5" Height="9" Canvas.Left="920" Stretch="Fill" Stroke="Black" Canvas.Top="208" Width="33"/>
+   	</Canvas>
+   	<ed:BlockArrow Fill="#FF717171" Height="3" Stroke="#FFA0A0A0" StrokeThickness="2" Width="162.249" Orientation="Right" Margin="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Canvas.Left="108.643" Canvas.Top="91.666"/>
+   	<MimicFoxboro MimicTemplate="{DynamicResource Foxboro_PmpCmpr}" UnitName="PZ2204A" UnitType="Foxboro_PmpCmpr" 
+   		Param0="False" 
+   		Width="70" RenderTransformOrigin="0,1" Margin="0" HorizontalAlignment="Stretch" Unit="TEST2" Height="53.3" VerticalAlignment="Stretch" Canvas.Left="75.493" Canvas.Top="67.529"/>
+   	<MimicFoxboro MimicTemplate="{DynamicResource Foxboro_PmpCmpr}" UnitName="PZ2204C" UnitType="Foxboro_PmpCmpr" 
+   		Param0="False" 
+   		Width="70" RenderTransformOrigin="0,1" Margin="0" HorizontalAlignment="Stretch" Unit="TEST2" Height="53.3" VerticalAlignment="Stretch" Canvas.Left="75.493" Canvas.Top="177.196"/>
+   	<ed:BlockArrow Fill="#FF717171" Height="3" Stroke="#FFA0A0A0" StrokeThickness="2" Width="67.971" Orientation="Right" Margin="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Canvas.Left="106.877" Canvas.Top="201.458"/>
+   	<TextBlock Height="12" Margin="0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="9.333" Canvas.Left="329.068" Canvas.Top="185.167" Width="62.71"><Run Language="zh-cn" Text="to EZ2201AB"/></TextBlock>
+   	<MimicFoxboro MimicTemplate="{DynamicResource Foxboro_PmpCmpr}" UnitName="PZ2204B" UnitType="Foxboro_PmpCmpr" 
+   		Param0="False" 
+   		Width="70" RenderTransformOrigin="0,1" Margin="0" HorizontalAlignment="Stretch" Unit="TEST2" Height="53.3" VerticalAlignment="Stretch" Canvas.Left="75.493" Canvas.Top="285.196"/>
+   	<ed:BlockArrow Fill="#FF717171" Height="109.458" Stroke="#FFA0A0A0" StrokeThickness="2" Width="3" Orientation="DOWN" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="268.306" Canvas.Top="92.458"/>
+   	<ed:BlockArrow Fill="#FF717171" Height="3" Stroke="#FFA0A0A0" StrokeThickness="2" Width="161.749" Orientation="Right" Margin="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Canvas.Left="107.643" Canvas.Top="310.166"/>
+   	<ed:BlockArrow Fill="#FF717171" Height="109.458" Stroke="#FFA0A0A0" StrokeThickness="2" Width="3" Orientation="up" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="268.473" Canvas.Top="202.125"/>
+   	<ed:BlockArrow Fill="#FF717171" Height="108.958" Stroke="#FFA0A0A0" StrokeThickness="2" Width="3" Orientation="up" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="174.306" Canvas.Top="93.625"/>
+   	<ed:BlockArrow Fill="#FF717171" Height="3" Stroke="#FFA0A0A0" StrokeThickness="2" Width="73.971" Orientation="Right" Margin="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Canvas.Left="271.002" Canvas.Top="200.792"/>
+   	<ed:BlockArrow Fill="#FF717171" Height="3" Stroke="#FFA0A0A0" StrokeThickness="2" Width="92.263" Orientation="Right" Margin="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Canvas.Left="176.377" Canvas.Top="201.292"/>
+   	<TextBlock Height="12" Margin="0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="9.333" Canvas.Left="162.402" Canvas.Top="43.667" Width="62.71"><Run Language="zh-cn" Text="to HZ2201"/></TextBlock>
+   	<ed:BlockArrow Fill="#FF717171" Height="36.291" Stroke="#FFA0A0A0" StrokeThickness="2" Width="3" Orientation="up" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="174.305" Canvas.Top="56.125"/>
+
+
+  </Canvas> 
+</DataTemplate></ResourceDictionary>
+

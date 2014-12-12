@@ -1,0 +1,78 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" 
+  xmlns:controls="clr-namespace:Foxboro.Emulation.Controls.Controls;assembly=Foxboro.Emulation.Controls"
+ xmlns:common="clr-namespace:Foxboro.Emulation.Controls.Common;assembly=Foxboro.Emulation.Controls"
+ xmlns:canonicalSplineLib="clr-namespace:CanonicalSplineLib;assembly=CanonicalSplineLib"
+mc:Ignorable="d"> 
+<ResourceDictionary.MergedDictionaries>
+<ResourceDictionary Source="Translations\WindowCDU4_BLENDER_Translation.xaml" />
+<ResourceDictionary Source="..\custom.xaml" />
+</ResourceDictionary.MergedDictionaries>
+<MimicTemplate x:Key="WindowCDU4_BLENDER" UniqueId="WindowCDU4_BLENDER">
+<Grid>
+<!--  Graphic Part  -->
+<ContentPresenter x:Name="GRAPHIC" ContentTemplate="{StaticResource WindowCDU4_BLENDER_Translation.xaml}" d:IsLocked="True"  />
+<!-- Normal Graphic Layer Path -->
+<Canvas x:Name="GRAPHIC_OVERLAY"/>
+<!-- FOD Part -->
+<Canvas x:Name='FOD' Visibility="{FODBinding}">
+<!-- Start FOD -->
+	<Button Content="CRUDEBLEND_PopUp" Width="128" Height="19" Style = "{DynamicResource FBButtonStyle}" Foreground = "#FF606060" Background = "#FFCCCCCC" BorderBrush= "#FFCCCCCC" Margin="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+Canvas.Left="112" Canvas.Top="693" 
+>
+		<i:Interaction.Triggers>
+			<i:EventTrigger EventName="Click">
+				<OpenWindowAction MimicTemplateKey="WindowCDU4_FeedTankPopUp" />
+			</i:EventTrigger>
+		</i:Interaction.Triggers>
+	</Button>
+<!-- Start FOD -->
+	<Mimic x:Name='_1004MV21' Unit='1004MV21' MimicTemplate='{DynamicResource HANDVALVE_ABB_FOD}' Canvas.Top='655' Canvas.Left='505.158'/>
+	<Button Content="TK105 106 BLEND_PopUp" Width="144" Height="19" Style = "{DynamicResource FBButtonStyle}" Foreground = "#FF606060" Background = "#FFCCCCCC" BorderBrush= "#FFCCCCCC" Margin="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+		Canvas.Left="112" Canvas.Top="437" 
+>
+		<i:Interaction.Triggers>
+			<i:EventTrigger EventName="Click">
+				<OpenWindowAction MimicTemplateKey="WindowCDU4_FeedTankPopUp3" />
+			</i:EventTrigger>
+		</i:Interaction.Triggers>
+	</Button>
+	<Button Content="TK03 04 BLEND_PopUp" Width="144" Height="19" Style = "{DynamicResource FBButtonStyle}" Foreground = "#FF606060" Background = "#FFCCCCCC" BorderBrush= "#FFCCCCCC" Margin="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+		Canvas.Left="96" Canvas.Top="168" RenderTransformOrigin="0.556,0.421" 
+>
+		<i:Interaction.Triggers>
+			<i:EventTrigger EventName="Click">
+				<OpenWindowAction MimicTemplateKey="WindowCDU4_FeedTankPopUp2" />
+			</i:EventTrigger>
+		</i:Interaction.Triggers>
+	</Button>
+<!-- Stop FOD -->
+</Canvas>
+<!-- BL Part -->
+<Canvas x:Name='BL' Visibility='{BLBinding}' d:IsLocked="True" >
+<!-- Start BL -->
+<!-- Stop BL -->
+</Canvas>
+<!-- FAILURE Part -->
+<Canvas x:Name='FAILURE' Visibility='{FAILUREBinding}' d:IsLocked="True" >
+	<Mimic x:Name='_JZ3702_FAILURE' Unit='JZ3702' MimicTemplate='{DynamicResource PUMP_ABB_FAILURE}' Canvas.Top='240.498' Canvas.Left='250.5'/>
+	<Mimic x:Name='_JZ1602_FAILURE' Unit='JZ1602' MimicTemplate='{DynamicResource PUMP_ABB_FAILURE}' Canvas.Top='378.498' Canvas.Left='249.5'/>
+	<Mimic x:Name='_JZ1601_FAILURE' Unit='JZ1601' MimicTemplate='{DynamicResource PUMP_ABB_FAILURE}' Canvas.Top='510.498' Canvas.Left='248.5'/>
+<!-- Start FAILURE -->
+<!-- Stop FAILURE -->
+</Canvas>
+<Mimic MimicTemplate="{StaticResource GraphicDigitalCircle}" Unit="M_JZ3702" Param0="Status" RenderTransformOrigin="0.667,0.572" Width="35" Height="28" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="261,254,0,0"/>
+<Mimic MimicTemplate="{StaticResource GraphicDigitalCircle}" Unit="M_JZ1602" Param0="Status" RenderTransformOrigin="0.667,0.572" Width="35" Height="28" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="261,0,0,346"/>
+<Mimic MimicTemplate="{StaticResource GraphicDigitalCircle}" Unit="M_JZ1601" Param0="Status" RenderTransformOrigin="0.667,0.572" Width="35" Height="28" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="261,0,0,217"/>
+<Mimic MimicTemplate="{StaticResource AnalogFloatBox}" Unit="SULFUR" Param0="Value" RenderTransformOrigin="0.667,0.572" Width="51" Height="28" HorizontalAlignment="Right" Margin="0,0,277,190" VerticalAlignment="Bottom"/>
+<MimicFoxboro MimicTemplate="{DynamicResource Foxboro_PidaStd}" UnitName="WATER_IN_FEED" UnitType="Foxboro_PidaStd" 
+	Param0="1" 
+	Width="70" Height="39.48" RenderTransformOrigin="0,1" HorizontalAlignment="Right" Margin="0,0,517,25.52" VerticalAlignment="Bottom"/>
+<TextBlock Height="28" TextWrapping="Wrap" Text="Total Crude Sulfur" Width="104" HorizontalAlignment="Right" Margin="0,0,245,158" VerticalAlignment="Bottom"/>
+<TextBlock Height="28" TextWrapping="Wrap" Text="Add Water to Feed" Width="104" HorizontalAlignment="Right" Margin="0,0,413,26" VerticalAlignment="Bottom"/>
+</Grid>
+</MimicTemplate>
+</ResourceDictionary>

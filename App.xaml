@@ -1,0 +1,23 @@
+﻿<Application xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d">
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="_EmulationLibraries.xaml" />
+                <ResourceDictionary Source="Styles.xaml"/>
+                <ResourceDictionary Source="GraphicViews/Translations/WindowCDU4_FeedTankPopUp_Translation.xaml"/>
+                <ResourceDictionary Source="GraphicViews/WindowCDU4_FeedTankPopUp.xaml"/>
+                <ResourceDictionary Source="GraphicViews/Translations/WindowCDU4_FeedTankPopUp3_Translation.xaml"/>
+                <ResourceDictionary Source="GraphicViews/Translations/WindowCDU4_FeedTankPopUp2_Translation.xaml"/>
+                <ResourceDictionary Source="GraphicViews/WindowCDU4_FeedTankPopUp3.xaml"/>
+                <ResourceDictionary Source="GraphicViews/WindowCDU4_FeedTankPopUp2.xaml"/>
+                <ResourceDictionary Source="GraphicViews/WindowHRU_FEED.xaml"/>
+                <ResourceDictionary Source="GraphicViews/WindowGOH3_UTILS.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

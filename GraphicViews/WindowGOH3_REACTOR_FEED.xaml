@@ -1,0 +1,66 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing" 
+mc:Ignorable="d"> 
+<ResourceDictionary.MergedDictionaries>
+<ResourceDictionary Source="Translations\WindowGOH3_REACTOR_FEED_Translation.xaml" />
+<ResourceDictionary Source="..\custom.xaml" />
+</ResourceDictionary.MergedDictionaries>
+<MimicTemplate x:Key="WindowGOH3_REACTOR_FEED" UniqueId="WindowGOH3_REACTOR_FEED">
+<Grid>
+<!--  Graphic Part  -->
+<ContentPresenter x:Name="GRAPHIC" ContentTemplate="{StaticResource WindowGOH3_REACTOR_FEED_Translation.xaml}" d:IsLocked="True"  />
+<!-- Normal Graphic Layer Path -->
+<Canvas x:Name="GRAPHIC_OVERLAY"/>
+<!-- FOD Part -->
+<Canvas x:Name='FOD' Visibility="{FODBinding}">
+<!-- Start FOD -->
+	<ed:BlockArrow Fill="#FF717171" Height="67.575" Canvas.Left="429.493" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="470.918" Width="3" Orientation="Down" RenderTransformOrigin="0.5,0.5">
+		<ed:BlockArrow.RenderTransform>
+			<TransformGroup>
+				<ScaleTransform/>
+				<SkewTransform/>
+				<RotateTransform Angle="90.417"/>
+				<TranslateTransform/>
+			</TransformGroup>
+		</ed:BlockArrow.RenderTransform>
+	</ed:BlockArrow>
+	<ed:BlockArrow Fill="#FF717171" Height="67.575" Canvas.Left="429.368" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="506.668" Width="3" Orientation="Down" RenderTransformOrigin="0.5,0.5">
+		<ed:BlockArrow.RenderTransform>
+			<TransformGroup>
+				<ScaleTransform/>
+				<SkewTransform/>
+				<RotateTransform Angle="90.417"/>
+				<TranslateTransform/>
+			</TransformGroup>
+		</ed:BlockArrow.RenderTransform>
+	</ed:BlockArrow>
+	<Mimic x:Name='_2308MV04' Unit='2308MV04' MimicTemplate='{DynamicResource HANDVALVE_ABB_FOD}' Canvas.Top='534.982' Canvas.Left='432' RenderTransformOrigin="15.6,8.9"/>
+
+	<Mimic x:Name='_2308MV03' Unit='2308MV03' MimicTemplate='{DynamicResource HANDVALVE_ABB_FOD}' Canvas.Top='499.99' Canvas.Left='432' RenderTransformOrigin="5.933,3.9"/>
+	<ed:BlockArrow Fill="#FF717171" Height="65.791" Canvas.Left="463.489" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="476.007" Width="3" Orientation="Down"/>
+	<TextBlock Height="19" Canvas.Left="340.5" TextWrapping="Wrap" Canvas.Top="495.621" Width="67.489" FontSize="9.333"><Run Language="zh-cn" Text="To D2302"/></TextBlock>
+	<TextBlock Height="19" Canvas.Left="341.668" TextWrapping="Wrap" Canvas.Top="530.454" Width="67.489" FontSize="9.333"><Run Language="zh-cn" Text="To D2303"/></TextBlock>
+
+</Canvas>
+<!-- BL Part -->
+<Canvas x:Name='BL' Visibility='{BLBinding}' >
+<!-- Start BL -->
+<!-- Stop BL -->
+
+</Canvas>
+<!-- FAILURE Part -->
+<Canvas x:Name='FAILURE' Visibility='{FAILUREBinding}' >
+<!-- Start FAILURE -->
+	<Mimic x:Name='_E2302ABC_FAILURE' Unit='E2302ABC' MimicTemplate='{DynamicResource EXCHANGER_ABB_FAILURE}' Canvas.Top='351' Canvas.Left='706'/>
+	<Mimic x:Name='_E2302DEF_FAILURE' Unit='E2302DEF' MimicTemplate='{DynamicResource EXCHANGER_ABB_FAILURE}' Canvas.Top='449' Canvas.Left='528'/>
+	<Mimic x:Name='_E2301_FAILURE' Unit='E2301AB' MimicTemplate='{DynamicResource EXCHANGER_ABB_FAILURE}' Canvas.Top='414.5' Canvas.Left='199' RenderTransformOrigin="0.2,3.35"/>
+<!-- Stop FAILURE -->
+
+</Canvas>
+
+</Grid>
+</MimicTemplate>
+</ResourceDictionary>

@@ -1,0 +1,64 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:converters="clr-namespace:Foxboro.Emulation.Controls.Converters;assembly=Foxboro.Emulation.Controls"
+  xmlns:controls="clr-namespace:Foxboro.Emulation.Controls.Controls;assembly=Foxboro.Emulation.Controls"
+ xmlns:common="clr-namespace:Foxboro.Emulation.Controls.Common;assembly=Foxboro.Emulation.Controls"
+ xmlns:canonicalSplineLib="clr-namespace:CanonicalSplineLib;assembly=CanonicalSplineLib">
+<DataTemplate x:Key="WindowCDU4_GOH3_OVW_Translation.xaml"> 
+<Canvas Width="1276" Height="830" Background="#FF7D7D7D">
+
+<TextBlock Height="64" Canvas.Left="176" TextWrapping="Wrap" Text="CDU4_GOH3 OTS OVERVIEW" Canvas.Top="88" Width="700" FontSize="48"/>
+<Button Content="CDU4 OVERVIEW" Canvas.Left="176" Canvas.Top="206" Width="113" Height="28"
+ Background="#FF969696"
+>
+<i:Interaction.Triggers>
+<i:EventTrigger EventName="Click">
+<ChainViewAction MimicTemplateKey="Windowcdu4_overview" />
+</i:EventTrigger>
+</i:Interaction.Triggers>
+</Button>
+<Button Content="GOH3 OVERVIEW" Canvas.Left="382" Canvas.Top="208" Width="113" Height="28"
+	Background="#FF969696"
+>
+	<i:Interaction.Triggers>
+		<i:EventTrigger EventName="Click">
+			<ChainViewAction MimicTemplateKey="WindowGOH3_OVERVIEW" />
+		</i:EventTrigger>
+	</i:Interaction.Triggers>
+</Button>
+<Button Content="RESET" Canvas.Left="176" Canvas.Top="312" Width="113" Height="28"
+	Background="#FF969696"
+>
+	<i:Interaction.Triggers>
+		<i:EventTrigger EventName="Click">
+			<ChainViewAction MimicTemplateKey="WindowCDU4_GOH3_RESET" />
+		</i:EventTrigger>
+	</i:Interaction.Triggers>
+</Button>
+<Button Content="TRIP" Canvas.Left="388" Canvas.Top="312" Width="113" Height="28"
+	Background="#FF969696"
+>
+	<i:Interaction.Triggers>
+		<i:EventTrigger EventName="Click">
+			<ChainViewAction MimicTemplateKey="WindowCDU4_GOH3_TRIP" />
+		</i:EventTrigger>
+	</i:Interaction.Triggers>
+</Button>
+<Button Content="SISBYP" Canvas.Left="582" Canvas.Top="312" Width="113" Height="28"
+	Background="#FF969696"
+>
+	<i:Interaction.Triggers>
+		<i:EventTrigger EventName="Click">
+			<ChainViewAction MimicTemplateKey="WindowCDU4_GOH3_SISBYP" />
+		</i:EventTrigger>
+	</i:Interaction.Triggers>
+</Button>
+<Button Content="CUSTOM MF" Canvas.Left="176" Canvas.Top="398" Width="113" Height="28"
+	Background="#FF969696"
+>
+	<i:Interaction.Triggers>
+		<i:EventTrigger EventName="Click">
+			<ChainViewAction MimicTemplateKey="WindowCDU4_GOH3_MF" />
+		</i:EventTrigger>
+	</i:Interaction.Triggers>
+</Button>
+</Canvas> 
+</DataTemplate></ResourceDictionary>

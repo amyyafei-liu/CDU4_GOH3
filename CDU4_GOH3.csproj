@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <DefaultClrNameSpace>NKReform</DefaultClrNameSpace>
+    <AssemblyName>CDU4_GOH3</AssemblyName>
+    <RootNamespace>CDU4_GOH3</RootNamespace>
+    <ApplicationVersion>1.0.0.*</ApplicationVersion>
+    <ApplicationRevision>0</ApplicationRevision>
+    <AlwaysCompileMarkupFilesInSeparateDomain>false</AlwaysCompileMarkupFilesInSeparateDomain>
+    <ProjectGuid>{10BD383D-9CDA-4678-8EF3-9B4FEFDCAB12}</ProjectGuid>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OutputType>Library</OutputType>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Utf8Output>true</Utf8Output>
+    <TargetFrameworkProfile />
+    <ExpressionBlendVersion>4.0.20525.0</ExpressionBlendVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BP.Emulation.Controls">
+      <HintPath>C:\Program Files (x86)\Microsoft Expression\Blend 4\EmulationAssemblies\Foxboro\BP.Emulation.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="CanonicalSplineLib">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft Expression\Blend 4\EmulationAssemblies\Foxboro\CanonicalSplineLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Foxboro.Emulation.Controls">
+      <HintPath>C:\Program Files (x86)\Microsoft Expression\Blend 4\EmulationAssemblies\Foxboro\Foxboro.Emulation.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="ManagedInterfaces">
+      <HintPath>C:\Program Files (x86)\Microsoft Expression\Blend 4\Extensions\ManagedInterfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Drawing">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft Expression\Blend 4\Extensions\Microsoft.Expression.Drawing.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Interactions">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft Expression\Blend 4\Extensions\Microsoft.Expression.Interactions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RSI.Common.Converters">
+      <HintPath>C:\Program Files (x86)\Microsoft Expression\Blend 4\Extensions\RSI.Common.Converters.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RSI.Common.Mvvm.Interfaces">
+      <HintPath>C:\Program Files (x86)\Microsoft Expression\Blend 4\Extensions\RSI.Common.Mvvm.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RSI.Common.Tools">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft Expression\Blend 4\Extensions\RSI.Common.Tools.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RSI.Common.WPFTools">
+      <HintPath>C:\Program Files (x86)\Microsoft Expression\Blend 4\Extensions\RSI.Common.WPFTools.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RSI.Emulation.Controls">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft Expression\Blend 4\EmulationAssemblies\RSI\RSI.Emulation.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="RSI.IndissPlus.Interactions">
+      <HintPath>C:\Program Files (x86)\Microsoft Expression\Blend 4\Extensions\RSI.IndissPlus.Interactions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RSI.IndissPlus.Plots">
+      <HintPath>C:\Program Files (x86)\Microsoft Expression\Blend 4\Extensions\RSI.IndissPlus.Plots.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RSI.IndissPlus.Solution">
+      <HintPath>C:\Program Files (x86)\Microsoft Expression\Blend 4\Extensions\RSI.IndissPlus.Solution.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RSI.IndissPlus.Solution">
+      <HintPath>C:\Program Files (x86)\Microsoft Expression\Blend 4\Extensions\RSI.Common.Tools.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RSI.Kernel.Model.Enums">
+      <HintPath>C:\Program Files (x86)\Microsoft Expression\Blend 4\Extensions\RSI.Kernel.Model.Enums.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RSI.Kernel.Model.Interfaces">
+      <HintPath>C:\Program Files (x86)\Microsoft Expression\Blend 4\Extensions\RSI.Kernel.Model.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RSI.OTS.HMI">
+      <HintPath>C:\Program Files (x86)\Microsoft Expression\Blend 4\Extensions\RSI.OTS.HMI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RSI.OTS.HMI.Interfaces">
+      <HintPath>C:\Program Files (x86)\Microsoft Expression\Blend 4\Extensions\RSI.OTS.HMI.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RSI.Services.MarkupExtensions">
+      <HintPath>C:\Program Files (x86)\Microsoft Expression\Blend 4\Extensions\RSI.Services.MarkupExtensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RSI.Services.UnitConverter.Interfaces">
+      <HintPath>C:\Program Files (x86)\Microsoft Expression\Blend 4\Extensions\RSI.Services.UnitConverter.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Interactivity">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft Expression\Blend 4\Extensions\System.Windows.Interactivity.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xaml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="WPFToolkit.dll">
+      <HintPath>C:\Program Files (x86)\Microsoft Expression\Blend 4\Extensions\WPFToolkit.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Page Include="ConectionStates.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Custom.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowCDU4_BLENDER_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowCDU4_CRUDE_OVERHEAD_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowCDU4_CRUDE_TOWER_PopUp_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowCDU4_CRUDE_TOWER_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowCDU4_DESALTERS_PopUp_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowCDU4_DESALTERS_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowCDU4_FeedTankPopUp2_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowCDU4_FeedTankPopUp3_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowCDU4_FeedTankPopUp_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowCDU4_FEED_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowCDU4_FLARE_BLOWDOWN_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowCDU4_FURNACE_AIR_PREHEATER_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowCDU4_FURNACE_FIRING_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowCDU4_FURNACE_MONITORING_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowCDU4_FURNACE_PROCESS_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowCDU4_FURNACE_STARTUP_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowCDU4_HGO_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowCDU4_INJECTIONS_PopUp_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowCDU4_INJECTIONS_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowCDU4_LGO_PopUp_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowCDU4_LGO_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowCDU4_OBSOLETE_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\Windowcdu4_overview_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowCDU4_PREHEAT_TRAIN_COLD_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowCDU4_PREHEAT_TRAIN_HOT_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowCDU4_PUMP_MONITOR_BRINE_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowCDU4_PUMP_MONITOR_CRUDE_FEED_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowCDU4_PUMP_MONITOR_RESIDUE_BPA_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowCDU4_RESIDUE_TRAIN_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowCDU4_RESIDUE_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowCDU4_UTILS_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowCDU4_VACUUM_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowDFU4_AMINE_FUELGAS_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowDFU4_PUMP_MONITORING_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowDFU4_SPLITTER_OVERHEAD_PopUp_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowDFU4_SPLITTER_OVERHEAD_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowDFU4_SPLITTER_PopUp_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowDFU4_SPLITTER_REBOILER_MONITORING_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowDFU4_SPLITTER_REBOILER_STARTUP_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowDFU4_SPLITTER_REBOILER_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowDFU4_SPLITTER_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowDFU4_STABILISER_MONITORING_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowDFU4_STABILISER_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowDHT4_COMPRESSOR_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowDHT4_FURNACE_STARTUP_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowDHT4_FURNACE_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowDHT4_H2_MAKE_UP_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowDHT4_INJECTIONS_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowDHT4_MONITORING_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowDHT4_PROCESS_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowDHT4_PUMP_MONITORING_STABILISER_FEED_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowHRU_FEED_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Translations\WindowUTILS_LP_STEAM_Translation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowCDU4_BLENDER.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowCDU4_CRUDE_OVERHEAD.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowCDU4_CRUDE_TOWER.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowCDU4_CRUDE_TOWER_PopUp.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowCDU4_DESALTERS.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowCDU4_DESALTERS_PopUp.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowCDU4_FEED.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowCDU4_FeedTankPopUp.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowCDU4_FeedTankPopUp2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowCDU4_FeedTankPopUp3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowCDU4_FLARE_BLOWDOWN.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowCDU4_FURNACE_AIR_PREHEATER.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowCDU4_FURNACE_FIRING.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowCDU4_FURNACE_MONITORING.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowCDU4_FURNACE_PROCESS.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowCDU4_FURNACE_STARTUP.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowCDU4_HGO.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowCDU4_INJECTIONS.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowCDU4_INJECTIONS_PopUp.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowCDU4_LGO.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowCDU4_LGO_PopUp.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowCDU4_OBSOLETE.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\Windowcdu4_overview.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowCDU4_PREHEAT_TRAIN_COLD.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowCDU4_PREHEAT_TRAIN_HOT.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowCDU4_PUMP_MONITOR_BRINE.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowCDU4_PUMP_MONITOR_CRUDE_FEED.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowCDU4_PUMP_MONITOR_RESIDUE_BPA.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowCDU4_RESIDUE.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowCDU4_RESIDUE_TRAIN.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowCDU4_UTILS.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowCDU4_VACUUM.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowDFU4_AMINE_FUELGAS.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowDFU4_PUMP_MONITORING.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowDFU4_SPLITTER.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowDFU4_SPLITTER_OVERHEAD.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowDFU4_SPLITTER_OVERHEAD_PopUp.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowDFU4_SPLITTER_PopUp.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowDFU4_SPLITTER_REBOILER.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowDFU4_SPLITTER_REBOILER_MONITORING.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowDFU4_SPLITTER_REBOILER_STARTUP.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowDFU4_STABILISER.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowDFU4_STABILISER_MONITORING.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowDHT4_COMPRESSOR.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowDHT4_FURNACE.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowDHT4_FURNACE_STARTUP.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowDHT4_H2_MAKE_UP.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowDHT4_INJECTIONS.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowDHT4_MONITORING.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowDHT4_PROCESS.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowDHT4_PUMP_MONITORING_STABILISER_FEED.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowHRU_FEED.xaml">
+          <Generator>MSBuild:Compile</Generator>
+          <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GraphicViews\WindowUTILS_LP_STEAM.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+        <Page Include="GraphicViews\Translations\WindowFLARE_INTERLINKING_Translation.xaml">
+          <Generator>MSBuild:Compile</Generator>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Include="GraphicViews\Translations\WindowGOH3_ABSORBERS_Translation.xaml">
+          <Generator>MSBuild:Compile</Generator>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Include="GraphicViews\Translations\WindowGOH3_AM_HC_DRAINS_Translation.xaml">
+          <Generator>MSBuild:Compile</Generator>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Include="GraphicViews\Translations\WindowGOH3_ANALYSER_HOUSE_Translation.xaml">
+          <Generator>MSBuild:Compile</Generator>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Include="GraphicViews\Translations\WindowGOH3_C2301_A_MONITORING_Translation.xaml">
+          <Generator>MSBuild:Compile</Generator>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Include="GraphicViews\Translations\WindowGOH3_C2301_B_MONITORING_Translation.xaml">
+          <Generator>MSBuild:Compile</Generator>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Include="GraphicViews\Translations\WindowGOH3_COMPRESSORS_Translation.xaml">
+          <Generator>MSBuild:Compile</Generator>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Include="GraphicViews\Translations\WindowGOH3_FEED_REACTOR_MONITORING_Translation.xaml">
+          <Generator>MSBuild:Compile</Generator>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Include="GraphicViews\Translations\WindowGOH3_FEED_Translation.xaml">
+          <Generator>MSBuild:Compile</Generator>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Include="GraphicViews\Translations\WindowGOH3_FURNACE_MONITORING_Translation.xaml">
+          <Generator>MSBuild:Compile</Generator>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Include="GraphicViews\Translations\WindowGOH3_FURNACE_Translation.xaml">
+          <Generator>MSBuild:Compile</Generator>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Include="GraphicViews\Translations\WindowGOH3_OVERVIEW_Translation.xaml">
+          <Generator>MSBuild:Compile</Generator>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Include="GraphicViews\Translations\WindowGOH3_REACTOR_FEED_Translation.xaml">
+          <Generator>MSBuild:Compile</Generator>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Include="GraphicViews\Translations\WindowGOH3_REACTOR_MONITORING_Translation.xaml">
+          <Generator>MSBuild:Compile</Generator>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Include="GraphicViews\Translations\WindowGOH3_SEPERATORS_Translation.xaml">
+          <Generator>MSBuild:Compile</Generator>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Include="GraphicViews\Translations\WindowGOH3_STRIPPER_DRYER_Translation.xaml">
+          <Generator>MSBuild:Compile</Generator>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Include="GraphicViews\Translations\WindowGOH3_UTILS_Translation.xaml">
+          <Generator>MSBuild:Compile</Generator>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Include="GraphicViews\Translations\WindowGOH3_VACUUM_Translation.xaml">
+          <Generator>MSBuild:Compile</Generator>
+          <SubType>Designer</SubType>
+        </Page>
+         <Page Include="GraphicViews\Translations\WindowCDU4_GOH3_OVW_Translation.xaml">
+		 <Generator>MSBuild:Compile</Generator>
+		 <SubType>Designer</SubType>
+	</Page>
+         <Page Include="GraphicViews\Translations\WindowCDU4_GOH3_BLANK_Translation.xaml">
+		 <Generator>MSBuild:Compile</Generator>
+		 <SubType>Designer</SubType>
+	</Page>
+        <Page Include="GraphicViews\WindowCDU4_LEVEL_1.xaml">
+          <Generator>MSBuild:Compile</Generator>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Include="GraphicViews\WindowFLARE_INTERLINKING.xaml">
+          <Generator>MSBuild:Compile</Generator>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Include="GraphicViews\WindowGOH3_ABSORBERS.xaml">
+          <Generator>MSBuild:Compile</Generator>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Include="GraphicViews\WindowGOH3_AM_HC_DRAINS.xaml">
+          <Generator>MSBuild:Compile</Generator>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Include="GraphicViews\WindowGOH3_ANALYSER_HOUSE.xaml">
+          <Generator>MSBuild:Compile</Generator>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Include="GraphicViews\WindowGOH3_C2301_A_MONITORING.xaml">
+          <Generator>MSBuild:Compile</Generator>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Include="GraphicViews\WindowGOH3_C2301_B_MONITORING.xaml">
+          <Generator>MSBuild:Compile</Generator>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Include="GraphicViews\WindowGOH3_COMPRESSORS.xaml">
+          <Generator>MSBuild:Compile</Generator>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Include="GraphicViews\WindowGOH3_FEED.xaml">
+          <Generator>MSBuild:Compile</Generator>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Include="GraphicViews\WindowGOH3_FEED_REACTOR_MONITORING.xaml">
+          <Generator>MSBuild:Compile</Generator>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Include="GraphicViews\WindowGOH3_FURNACE.xaml">
+          <Generator>MSBuild:Compile</Generator>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Include="GraphicViews\WindowGOH3_FURNACE_MONITORING.xaml">
+          <Generator>MSBuild:Compile</Generator>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Include="GraphicViews\WindowGOH3_OVERVIEW.xaml">
+          <Generator>MSBuild:Compile</Generator>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Include="GraphicViews\WindowGOH3_REACTOR_FEED.xaml">
+          <Generator>MSBuild:Compile</Generator>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Include="GraphicViews\WindowGOH3_REACTOR_MONITORING.xaml">
+          <Generator>MSBuild:Compile</Generator>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Include="GraphicViews\WindowGOH3_SEPERATORS.xaml">
+          <Generator>MSBuild:Compile</Generator>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Include="GraphicViews\WindowGOH3_STRIPPER_DRYER.xaml">
+          <Generator>MSBuild:Compile</Generator>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Include="GraphicViews\WindowGOH3_UTILS.xaml">
+          <Generator>MSBuild:Compile</Generator>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Include="GraphicViews\WindowGOH3_VACUUM.xaml">
+          <Generator>MSBuild:Compile</Generator>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Include="GraphicViews\WindowCDU4_GOH3_OVW.xaml">
+	  <Generator>MSBuild:Compile</Generator>
+	  <SubType>Designer</SubType>
+	</Page>
+        <Page Include="GraphicViews\WindowCDU4_GOH3_MF.xaml">
+	  <Generator>MSBuild:Compile</Generator>
+	  <SubType>Designer</SubType>
+	</Page>
+        <Page Include="GraphicViews\WindowCDU4_GOH3_RESET.xaml">
+	  <Generator>MSBuild:Compile</Generator>
+	  <SubType>Designer</SubType>
+	</Page>
+        <Page Include="GraphicViews\WindowCDU4_GOH3_SISBYP.xaml">
+	  <Generator>MSBuild:Compile</Generator>
+	  <SubType>Designer</SubType>
+	</Page>
+        <Page Include="GraphicViews\WindowCDU4_GOH3_TRIP.xaml">
+	  <Generator>MSBuild:Compile</Generator>
+	  <SubType>Designer</SubType>
+	</Page>
+    <Page Include="Styles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TOC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="_BackPlans.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="_EmulationLibraries.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="_Default.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <None Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\RSI logo.jpg" />
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="GraphicViews\Translations\Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\MainLogo.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup />
+  <ItemGroup />
+  <ItemGroup />
+  <ItemGroup />
+  <ItemGroup />
+  <ItemGroup />
+  <ItemGroup />
+  <ItemGroup />
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(TargetPath)" "$(TargetDir)$(TargetName).RsiGraphics</PostBuildEvent>
+  </PropertyGroup>
+</Project>

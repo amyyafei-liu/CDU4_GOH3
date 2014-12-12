@@ -1,0 +1,103 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+mc:Ignorable="d"> 
+<ResourceDictionary.MergedDictionaries>
+<ResourceDictionary Source="Translations\WindowCDU4_FURNACE_FIRING_Translation.xaml" />
+<ResourceDictionary Source="..\custom.xaml" />
+</ResourceDictionary.MergedDictionaries>
+<MimicTemplate x:Key="WindowCDU4_FURNACE_FIRING" UniqueId="WindowCDU4_FURNACE_FIRING">
+<Grid>
+<!--  Graphic Part  -->
+<ContentPresenter x:Name="GRAPHIC" ContentTemplate="{StaticResource WindowCDU4_FURNACE_FIRING_Translation.xaml}" d:IsLocked="True"  />
+<!-- Normal Graphic Layer Path -->
+<Canvas x:Name="GRAPHIC_OVERLAY"/>
+<!-- FOD Part -->
+<Canvas x:Name='FOD' Visibility="{FODBinding}">
+<!-- Start FOD -->
+<!-- Start FOD -->
+	<Mimic x:Name='_2110MV01' Unit='2110MV01' MimicTemplate='{DynamicResource HANDVALVE_ABB_FOD}' Canvas.Top='198' Canvas.Left='130'/>
+	<Mimic x:Name='_2111MV05' Unit='2111MV05' MimicTemplate='{DynamicResource HANDVALVE_ABB_FOD}' Canvas.Top='655.666' Canvas.Left='448.326'/>
+	<Mimic x:Name='_2111MV06' Unit='2111MV06' MimicTemplate='{DynamicResource HANDVALVE_ABB_FOD}' Canvas.Top='655.666' Canvas.Left='490'/>
+	<Mimic x:Name='_GZ2109' Unit='GZ2109' MimicTemplate='{DynamicResource FILTER_ABB_FOD}' Canvas.Top='653.216' Canvas.Left='471.25' Height="13.2" Width="13.5"/>
+	<ed:BlockArrow Fill="#FF717171" Height="35.992" Canvas.Left="111.95" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="168" Width="3" Orientation="Up"/>
+	<ed:BlockArrow Fill="#FF717171" Height="42.192" Canvas.Left="436.25" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="660.608" Width="3" Orientation="Down"/>
+	<ed:BlockArrow Fill="#FF717171" Height="3" Canvas.Left="437" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="701" Width="73.133" Orientation="Right"/>
+	<ed:BlockArrow Fill="#FF717171" Height="42.192" Canvas.Left="509" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="660.608" Width="3" Orientation="Up"/>
+	<Mimic x:Name='_2110MV04' Unit='2110MV04' MimicTemplate='{DynamicResource HANDVALVE_ABB_FOD}' Canvas.Top='75' Canvas.Left='1065'/>
+	<Mimic x:Name='_2111MV07' Unit='2111MV07' MimicTemplate='{DynamicResource HANDVALVE_ABB_FOD}' Canvas.Top='697.25' Canvas.Left='472.5'/>
+	<ed:BlockArrow Fill="#FF717171" Height="85.075" Canvas.Left="1051.267" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="80" Width="3" Orientation="Down"/>
+	<ed:BlockArrow Fill="#FF717171" Height="3" Canvas.Left="1054.267" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="162.075" Width="60.733" Orientation="Right"/>
+	<Mimic x:Name='_ATM11' Unit='ATM11' MimicTemplate='{DynamicResource OUTLETBL_ABB_FOD}' Canvas.Top='152.25' Canvas.Left='1120'/>
+	<Mimic x:Name='_ATM12' Unit='ATM12' MimicTemplate='{DynamicResource OUTLETBL_ABB_FOD}' HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="280.238" Canvas.Top="123.333"/>
+	<Mimic x:Name='_HCVZ1047' Unit='HCVZ1047' MimicTemplate='{DynamicResource HANDVALVE_ABB_FOD}' Canvas.Top='158.664' Canvas.Left='1065'/>
+	<ed:BlockArrow Fill="#FF717171" Height="72.992" Canvas.Left="110.95" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="80" Width="3" Orientation="Up"/>
+	<ed:BlockArrow Fill="#FF717171" Height="210.95" Canvas.Left="218.474" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="-24.886" Width="3" Orientation="Up" RenderTransformOrigin="0.5,0.5">
+		<ed:BlockArrow.RenderTransform>
+			<TransformGroup>
+				<ScaleTransform/>
+				<SkewTransform/>
+				<RotateTransform Angle="89.661"/>
+				<TranslateTransform/>
+			</TransformGroup>
+		</ed:BlockArrow.RenderTransform>
+	</ed:BlockArrow>
+	<Mimic x:Name='_RVZ1039' Unit='RVZ1039' Param0="barg" MimicTemplate='{DynamicResource PSV_ABB_FOD}' HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="182" Canvas.Top="92.08"/>
+	<Mimic x:Name='_2110MV05' Unit='2110MV05' MimicTemplate='{DynamicResource HANDVALVE_ABB_FOD}' Canvas.Top='102' Canvas.Left='105' RenderTransformOrigin="0.5,0.5">
+		<Mimic.RenderTransform>
+			<TransformGroup>
+				<ScaleTransform/>
+				<SkewTransform/>
+				<RotateTransform Angle="-90"/>
+				<TranslateTransform/>
+			</TransformGroup>
+		</Mimic.RenderTransform>
+	</Mimic>
+	<ed:BlockArrow Fill="#FF717171" Height="57.992" Canvas.Left="212.95" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="144" Width="3" Orientation="Up"/>
+	<ed:BlockArrow Fill="#FF717171" Height="45.485" Canvas.Left="250.506" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="109.101" Width="3" Orientation="Up" RenderTransformOrigin="0.5,0.5">
+		<ed:BlockArrow.RenderTransform>
+			<TransformGroup>
+				<ScaleTransform/>
+				<SkewTransform/>
+				<RotateTransform Angle="89.661"/>
+				<TranslateTransform/>
+			</TransformGroup>
+		</ed:BlockArrow.RenderTransform>
+	</ed:BlockArrow>
+	<Mimic MimicTemplate="{StaticResource AnalogFloatBox}" Unit="T_XIZ2124A" Param0="Value" RenderTransformOrigin="0.667,0.572" Width="35" Height="28" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="238.238" Canvas.Top="370" Content="T_"/>
+	<TextBlock Height="28" TextWrapping="Wrap" Text="AMP" Width="44" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="280.238" Canvas.Top="376"/>
+	<Mimic MimicTemplate="{StaticResource AnalogFloatBox}" Unit="T_XIZ2124B" Param0="Value" RenderTransformOrigin="0.667,0.572" Width="35" Height="28" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="249.238" Canvas.Top="544" Content="T_"/>
+	<TextBlock Height="28" TextWrapping="Wrap" Text="AMP" Width="44" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="291.238" Canvas.Top="550"/>
+	<Mimic MimicTemplate="{StaticResource AnalogFloatBox}" Unit="T_XIZ2125A" Param0="Value" RenderTransformOrigin="0.667,0.572" Width="35" Height="28" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="946" Canvas.Top="632.416" Content="T_"/>
+	<TextBlock Height="28" TextWrapping="Wrap" Text="AMP" Width="44" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="988" Canvas.Top="638.416"/>
+	<Mimic MimicTemplate="{StaticResource AnalogFloatBox}" Unit="T_XIZ2125B" Param0="Value" RenderTransformOrigin="0.667,0.572" Width="35" Height="28" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="946" Canvas.Top="664.416" Content="T_"/>
+	<TextBlock Height="28" TextWrapping="Wrap" Text="AMP" Width="44" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="988" Canvas.Top="670.416"/>
+<!-- Stop FOD -->
+
+</Canvas>
+<!-- BL Part -->
+<Canvas x:Name='BL' Visibility='{BLBinding}' d:IsLocked="True" >
+<!-- Start BL -->
+<!-- Stop BL -->
+
+</Canvas>
+<!-- FAILURE Part -->
+<Canvas x:Name='FAILURE' Visibility='{FAILUREBinding}' d:IsLocked="True" >
+<!-- Start FAILURE -->
+<Mimic x:Name='_GZ2109_FAILURE' Unit='GZ2109' MimicTemplate='{DynamicResource FILTER_ABB_FAILURE}' Canvas.Top='640' Canvas.Left='486'/>
+<!-- Stop FAILURE -->
+
+</Canvas>
+<MimicFoxboro MimicTemplate="{DynamicResource Foxboro_FeedBackV}" UnitName="CZ2124A" UnitType="Foxboro_FeedBackV" 
+	Width="16" Height="25" RenderTransformOrigin="0,1" Margin="208,0,0,349" VerticalAlignment="Bottom" HorizontalAlignment="Left" Unit="CZ2124A"/>
+<MimicFoxboro MimicTemplate="{DynamicResource Foxboro_FeedBackV}" UnitName="CZ2124B" UnitType="Foxboro_FeedBackV" 
+	Width="16" Height="25" RenderTransformOrigin="0,1" Margin="208,0,0,246" VerticalAlignment="Bottom" HorizontalAlignment="Left" Unit="CZ2124B"/>
+<MimicFoxboro MimicTemplate="{DynamicResource Foxboro_FeedBackV}" UnitName="CZ2125A" UnitType="Foxboro_FeedBackV" 
+	Width="16" Height="25" RenderTransformOrigin="0,1" Margin="0,0,417,92.334" VerticalAlignment="Bottom" HorizontalAlignment="Right" Unit="CZ2125A"/>
+<MimicFoxboro MimicTemplate="{DynamicResource Foxboro_FeedBackV}" UnitName="CZ2125B" UnitType="Foxboro_FeedBackV" 
+	Width="16" Height="25" RenderTransformOrigin="0,1" Margin="0,0,397,92.334" VerticalAlignment="Bottom" HorizontalAlignment="Right" Unit="CZ2125B"/>
+</Grid>
+</MimicTemplate>
+</ResourceDictionary>

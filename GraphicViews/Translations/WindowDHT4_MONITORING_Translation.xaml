@@ -1,0 +1,369 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:converters="clr-namespace:Foxboro.Emulation.Controls.Converters;assembly=Foxboro.Emulation.Controls"
+  xmlns:controls="clr-namespace:Foxboro.Emulation.Controls.Controls;assembly=Foxboro.Emulation.Controls"
+ xmlns:common="clr-namespace:Foxboro.Emulation.Controls.Common;assembly=Foxboro.Emulation.Controls"
+ xmlns:canonicalSplineLib="clr-namespace:CanonicalSplineLib;assembly=CanonicalSplineLib">
+  <DataTemplate x:Key="WindowDHT4_MONITORING_Translation.xaml"> 
+   <Canvas Width="1333" Height="758" Background="White">  
+<Border Canvas.Left="0" Canvas.Top="0" Width="1333" Height="758" Background="#FFCCCCCC" BorderThickness="1" BorderBrush="#FF000000" /> 
+
+<Polyline Points="353.51,98 353.51,168 273.51,168 273.51,548 613.51,548 613.51,168 533.51,168 533.51,98 353.51,98 " Fill="#FFC3C3C3" StrokeThickness="2" Stroke="#FF939393" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_TitleBar}" UnitName="DHT4 MONITORING" UnitType="Foxboro_TitleBar" 
+Param0="DHT4 MONITORING" 
+Canvas.Left="0.43" Canvas.Top="11.02" Width="1333" Height="19.79" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<Polyline Points="915.49,475.13 915.49,550.5 " StrokeThickness="3" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="908.51,188 898.51,188 903.51,198 908.51,188 " Fill="#FF717171" StrokeThickness="1" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="709.01,591.12 709.01,660.5 " StrokeThickness="3" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="803.51,224.11 803.51,445.36 1003.51,445.36 1003.51,224.11 803.51,224.11 " Fill="#FFC3C3C3" StrokeThickness="2" Stroke="#FF939393" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<canonicalSplineLib:CanonicalSpline Points=" 1003.38,226.88 998.74,217.06 981.87,208.33 954.94,201.8 921.42,198.31 885.6,198.31 852.07,201.8 825.15,208.33 808.28,217.06 803.63,226.88 " Tension="0.6" IsClosed="false" IsFilled="true" Fill="#FFC3C3C3" StrokeThickness="2" Stroke="#FF939393" /> 
+
+<canonicalSplineLib:CanonicalSpline Points=" 1003.38,441.78 998.74,453.14 981.87,463.25 954.94,470.81 921.42,474.85 885.6,474.85 852.07,470.81 825.15,463.25 808.28,453.14 803.63,441.78 " Tension="0.6" IsClosed="false" IsFilled="true" Fill="#FFC3C3C3" StrokeThickness="2" Stroke="#FF939393" /> 
+
+<Polyline Points="251.51,228 251.51,478 " StrokeThickness="3" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="713.51,228 713.51,478 " StrokeThickness="3" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="713.51,353 763.51,353 " StrokeThickness="3" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="763.51,127.55 763.51,352.99 " StrokeThickness="3" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="763.51,128 903.51,128 " StrokeThickness="3" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="903.51,128.35 903.51,188 " StrokeThickness="3" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="181,128.29 181,557.9 " StrokeThickness="3" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="406.6,695.5 1238.78,695.5 " StrokeThickness="3" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<TextBlock Canvas.Left="961.55" Canvas.Top="102.36" Width="Auto" Height="Auto" Text="FIRED DUTY" FontSize="10" Foreground="#FF717171" /> 
+
+<TextBlock Canvas.Left="958.01" Canvas.Top="75" Width="Auto" Height="Auto" Text="NORM. DUTY" FontSize="10" Foreground="#FF717171" /> 
+
+<Polyline Points="481.51,620.5 481.51,630.5 491.51,625.5 481.51,620.5 " Fill="#FF717171" StrokeThickness="1" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="226.5,142.94 226.5,352.75 " StrokeThickness="3" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="518.51,128 518.51,143 " StrokeThickness="3" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="779.51,620.5 779.51,630.5 789.51,625.5 779.51,620.5 " Fill="#FF717171" StrokeThickness="1" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="802.01,590.33 802.01,660.5 " StrokeThickness="3" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="915.95,565.08 915.95,660.5 " StrokeThickness="3" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="801.52,660.5 915.41,660.5 " StrokeThickness="3" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="708.51,590.5 802.32,590.5 " StrokeThickness="3" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="503.59,660.5 709.3,660.5 " StrokeThickness="3" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="504.01,585.56 504.01,660.5 " StrokeThickness="3" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="416.48,585.5 503.59,585.5 " StrokeThickness="3" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="407.01,585.56 407.01,688.44 " StrokeThickness="3" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="35.11,625.5 959.17,625.5 " StrokeThickness="3" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="967.51,558 967.51,625.61 " StrokeThickness="3" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="958.51,620.5 958.51,630.5 968.51,625.5 958.51,620.5 " Fill="#FF717171" StrokeThickness="1" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="753.51,348 753.51,358 763.51,353 753.51,348 " Fill="#FF717171" StrokeThickness="1" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="719.01,595.5 719.01,585.5 709.01,590.5 719.01,595.5 " Fill="#FF717171" StrokeThickness="1" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="417.01,590.5 417.01,580.5 407.01,585.5 417.01,590.5 " Fill="#FF717171" StrokeThickness="1" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="338.51,228 338.51,220.5 " StrokeThickness="1" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="443.51,227.75 443.51,220.5 " StrokeThickness="1" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="548.51,228 548.51,220.5 " StrokeThickness="1" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="338.51,277.75 338.51,270.25 " StrokeThickness="1" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="443.51,277.5 443.51,270.25 " StrokeThickness="1" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="548.51,278 548.51,270.5 " StrokeThickness="1" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="338.51,327.75 338.51,320.25 " StrokeThickness="1" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="443.51,327.5 443.51,320.25 " StrokeThickness="1" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="548.51,328 548.51,320.5 " StrokeThickness="1" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="338.51,377.75 338.51,370.25 " StrokeThickness="1" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="443.51,377.5 443.51,370.25 " StrokeThickness="1" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="548.51,377.75 548.51,370.25 " StrokeThickness="1" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="338.51,427.75 338.51,420.25 " StrokeThickness="1" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="443.51,427.5 443.51,420.25 " StrokeThickness="1" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="548.51,427.75 548.51,420.25 " StrokeThickness="1" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="338.51,477.75 338.51,470.25 " StrokeThickness="1" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="443.51,477.5 443.51,470.25 " StrokeThickness="1" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="548.51,477.75 548.51,470.25 " StrokeThickness="1" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="857.5,128 857.5,120.5 " StrokeThickness="1" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="922.49,515.1 914.99,515.1 " StrokeThickness="1" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="857.5,625.5 857.5,618 " StrokeThickness="1" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="857.5,660.5 857.5,653 " StrokeThickness="1" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="663.51,625.5 663.51,618 " StrokeThickness="1" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="663.51,660.5 663.51,653 " StrokeThickness="1" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="338.51,625.5 338.51,618 " StrokeThickness="1" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="414.5,672.5 407,672.5 " StrokeThickness="1" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_Data}" UnitName="TIZ2015" UnitType="Foxboro_Data" 
+Canvas.Left="416.13" Canvas.Top="98.08" Width="55" Height="27" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_Data}" UnitName="TIZ20105" UnitType="Foxboro_Data" 
+Canvas.Left="416.13" Canvas.Top="194.78" Width="55" Height="27" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_Data}" UnitName="TIZ20106" UnitType="Foxboro_Data" 
+Canvas.Left="415.94" Canvas.Top="244.42" Width="55" Height="27" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_Data}" UnitName="TIZ20107" UnitType="Foxboro_Data" 
+Canvas.Left="415.94" Canvas.Top="294.65" Width="55" Height="27" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_Data}" UnitName="TIZ20108" UnitType="Foxboro_Data" 
+Canvas.Left="415.81" Canvas.Top="344.44" Width="55" Height="27" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_Data}" UnitName="TIZ20109" UnitType="Foxboro_Data" 
+Canvas.Left="415.76" Canvas.Top="394.55" Width="55" Height="27" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_Data}" UnitName="TIZ20110" UnitType="Foxboro_Data" 
+Canvas.Left="415.76" Canvas.Top="444.76" Width="55" Height="27" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_Data}" UnitName="TIAZ2018" UnitType="Foxboro_Data" 
+Canvas.Left="520.73" Canvas.Top="444.48" Width="55" Height="27" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_Data}" UnitName="TIAZ2017" UnitType="Foxboro_Data" 
+Canvas.Left="520.86" Canvas.Top="394.43" Width="55" Height="27" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_Data}" UnitName="TIAZ2016" UnitType="Foxboro_Data" 
+Canvas.Left="520.85" Canvas.Top="344.82" Width="55" Height="27" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_Data}" UnitName="TIAZ2015" UnitType="Foxboro_Data" 
+Canvas.Left="521.06" Canvas.Top="294.42" Width="55" Height="27" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_Data}" UnitName="TIAZ2014" UnitType="Foxboro_Data" 
+Canvas.Left="520.65" Canvas.Top="244.61" Width="55" Height="27" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_Data}" UnitName="TIAZ2013" UnitType="Foxboro_Data" 
+Canvas.Left="520.65" Canvas.Top="194.58" Width="55" Height="27" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_Data}" UnitName="TIZ2002" UnitType="Foxboro_Data" 
+Canvas.Left="638.15" Canvas.Top="592.32" Width="55" Height="27" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_Data}" UnitName="TIZ2007" UnitType="Foxboro_Data" 
+Canvas.Left="415.76" Canvas.Top="656.5" Width="55" Height="27" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_Data}" UnitName="TIZ2001" UnitType="Foxboro_Data" 
+Canvas.Left="311.15" Canvas.Top="592.24" Width="55" Height="27" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_Data}" UnitName="TIZ20104" UnitType="Foxboro_Data" 
+Canvas.Left="311.15" Canvas.Top="444.61" Width="55" Height="27" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_Data}" UnitName="TIZ20103" UnitType="Foxboro_Data" 
+Canvas.Left="311.15" Canvas.Top="394.58" Width="55" Height="27" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_Data}" UnitName="TIZ20102" UnitType="Foxboro_Data" 
+Canvas.Left="311.15" Canvas.Top="344.58" Width="55" Height="27" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_Data}" UnitName="TIZ20101" UnitType="Foxboro_Data" 
+Canvas.Left="311.15" Canvas.Top="294.58" Width="55" Height="27" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_Data}" UnitName="TIZ20100" UnitType="Foxboro_Data" 
+Canvas.Left="311.15" Canvas.Top="244.58" Width="55" Height="27" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_Data}" UnitName="TIZ20099" UnitType="Foxboro_Data" 
+Canvas.Left="311.15" Canvas.Top="194.61" Width="55" Height="27" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<Polyline Points="180.21,128 518.51,128 " StrokeThickness="3" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="181.01,558 966.32,558 " StrokeThickness="3" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_Data}" UnitName="TIZ2028" UnitType="Foxboro_Data" 
+Canvas.Left="833.51" Canvas.Top="94.62" Width="55" Height="27" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_Data}" UnitName="TIZ2079" UnitType="Foxboro_Data" 
+Canvas.Left="833.51" Canvas.Top="244.58" Width="55" Height="27" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_Data}" UnitName="TIZ2081" UnitType="Foxboro_Data" 
+Canvas.Left="833.51" Canvas.Top="284.62" Width="55" Height="27" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_Data}" UnitName="TIZ2083" UnitType="Foxboro_Data" 
+Canvas.Left="833.51" Canvas.Top="319.58" Width="55" Height="27" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_Data}" UnitName="TIZ2085" UnitType="Foxboro_Data" 
+Canvas.Left="833.51" Canvas.Top="357.08" Width="55" Height="27" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_Data}" UnitName="TIZ2087" UnitType="Foxboro_Data" 
+Canvas.Left="833.51" Canvas.Top="394.58" Width="55" Height="27" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_Data}" UnitName="TIZ2097" UnitType="Foxboro_Data" 
+Canvas.Left="923.51" Canvas.Top="394.74" Width="55" Height="27" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_Data}" UnitName="TIZ2095" UnitType="Foxboro_Data" 
+Canvas.Left="923.51" Canvas.Top="357.08" Width="55" Height="27" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_Data}" UnitName="TIZ2093" UnitType="Foxboro_Data" 
+Canvas.Left="923.51" Canvas.Top="319.58" Width="55" Height="27" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_Data}" UnitName="TIZ2091" UnitType="Foxboro_Data" 
+Canvas.Left="923.51" Canvas.Top="282.08" Width="55" Height="27" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_Data}" UnitName="TIZ2089" UnitType="Foxboro_Data" 
+Canvas.Left="923.51" Canvas.Top="244.58" Width="55" Height="27" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_Data}" UnitName="TIZ2005" UnitType="Foxboro_Data" 
+Canvas.Left="833.51" Canvas.Top="627" Width="55" Height="27" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_Data}" UnitName="TIZ2003" UnitType="Foxboro_Data" 
+Canvas.Left="833.47" Canvas.Top="592.08" Width="55" Height="27" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_Data}" UnitName="XFDZ1_2151" UnitType="Foxboro_Data" 
+Canvas.Left="1028.51" Canvas.Top="89.62" Width="55" Height="27" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_Data}" UnitName="XEFZ2151" UnitType="Foxboro_Data" 
+Canvas.Left="1028.51" Canvas.Top="117.12" Width="55" Height="27" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<Polyline Points="10.61,78 923.5,78 " StrokeThickness="2" Stroke="#FFADADAD" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="923.51,78 923.51,198 " StrokeThickness="2" Stroke="#FFADADAD" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Border Canvas.Left="14.07" Canvas.Top="64.75" Width="11.93" Height="12.5" BorderThickness="0" > 
+<TextBlock Text="N2" FontSize="10.5" Foreground="#FF606060" TextAlignment="Center" Margin="0,0,-10,0" /> 
+</Border>
+<Polyline Points="263.51,78 263.51,70.5 " StrokeThickness="1" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_Data}" UnitName="FITZ2020" UnitType="Foxboro_Data" 
+Canvas.Left="236.15" Canvas.Top="44.58" Width="55" Height="27" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<Polyline Points="412.01,685 402.01,685 407.01,695 412.01,685 " Fill="#FF717171" StrokeThickness="1" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_Data}" UnitName="TIZ2006" UnitType="Foxboro_Data" 
+Canvas.Left="638.15" Canvas.Top="627.08" Width="55" Height="27" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<Polyline Points="226.25,143 518.51,143 " StrokeThickness="3" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="226.25,353 252.62,353 " StrokeThickness="3" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="252.62,328 713.51,328 " StrokeThickness="3" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="251.82,278 713.51,278 " StrokeThickness="3" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="252.62,228 713.51,228 " StrokeThickness="3" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="253.42,378 713.51,378 " StrokeThickness="3" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="253.42,428 713.51,428 " StrokeThickness="3" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="253.42,478 713.51,478 " StrokeThickness="3" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Button Content="PZ2151" Canvas.Left="4.05" Canvas.Top="616.88" Width="90" Height="18" Style = "{DynamicResource FBButtonStyleRight}" Foreground = "#FF606060" Background = "#FFCCCCCC" BorderBrush= "#FF606060" 
+>
+<i:Interaction.Triggers>
+<i:EventTrigger EventName="Click">
+<ChainViewAction MimicTemplateKey="WindowDHT4_PROCESS" />
+</i:EventTrigger>
+</i:Interaction.Triggers>
+</Button>
+<Button Content="EZ2152" Canvas.Left="1236.58" Canvas.Top="686.6" Width="90" Height="18" Style = "{DynamicResource FBButtonStyleRight}" Foreground = "#FF606060" Background = "#FFCCCCCC" BorderBrush= "#FF606060" 
+>
+<i:Interaction.Triggers>
+<i:EventTrigger EventName="Click">
+<ChainViewAction MimicTemplateKey="WindowDHT4_PROCESS" />
+</i:EventTrigger>
+</i:Interaction.Triggers>
+</Button>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_BlockNameEquipement}" UnitName="TagName" UnitType="Foxboro_BlockNameEquipement" 
+Param0="HZ2151" 
+Canvas.Left="418.61" Canvas.Top="178.73" Width="48" Height="12" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_BlockNameEquipement}" UnitName="TagName" UnitType="Foxboro_BlockNameEquipement" 
+Param0="RZ2156" 
+Canvas.Left="878.6" Canvas.Top="224.27" Width="48" Height="12" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<canonicalSplineLib:CanonicalSpline Points=" 407.13,637.88 411.21,637.2 414.85,635.24 417.65,632.2 419.31,628.41 419.66,624.29 418.64,620.28 416.38,616.82 413.11,614.29 409.2,612.94 405.06,612.94 401.15,614.29 397.88,616.82 395.62,620.28 394.61,624.29 394.95,628.41 396.61,632.2 399.41,635.24 403.05,637.2 407.13,637.88 " Tension="0.6" IsClosed="false" IsFilled="true" Fill="#FFC3C3C3" StrokeThickness="1" Stroke="#FFB2B2B2" /> 
+
+<Polyline Points="406.18,613.14 399.86,621.48 412.51,629.81 406.18,638.14 " StrokeThickness="1" Stroke="#FFB2B2B2" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<canonicalSplineLib:CanonicalSpline Points=" 504.13,637.88 508.21,637.2 511.85,635.24 514.65,632.2 516.31,628.41 516.65,624.29 515.64,620.28 513.38,616.82 510.11,614.29 506.2,612.94 502.06,612.94 498.15,614.29 494.88,616.82 492.62,620.28 491.6,624.29 491.95,628.41 493.61,632.2 496.41,635.24 500.05,637.2 504.13,637.88 " Tension="0.6" IsClosed="false" IsFilled="true" Fill="#FFC3C3C3" StrokeThickness="1" Stroke="#FFB2B2B2" /> 
+
+<Polyline Points="503.18,613.14 496.86,621.48 509.5,629.81 503.18,638.14 " StrokeThickness="1" Stroke="#FFB2B2B2" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<canonicalSplineLib:CanonicalSpline Points=" 709.14,637.88 713.22,637.2 716.86,635.24 719.66,632.2 721.32,628.41 721.67,624.29 720.65,620.28 718.39,616.82 715.12,614.29 711.21,612.94 707.07,612.94 703.16,614.29 699.89,616.82 697.63,620.28 696.62,624.29 696.96,628.41 698.62,632.2 701.42,635.24 705.06,637.2 709.14,637.88 " Tension="0.6" IsClosed="false" IsFilled="true" Fill="#FFC3C3C3" StrokeThickness="1" Stroke="#FFB2B2B2" /> 
+
+<Polyline Points="708.19,613.14 701.87,621.48 714.52,629.81 708.19,638.14 " StrokeThickness="1" Stroke="#FFB2B2B2" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<canonicalSplineLib:CanonicalSpline Points=" 802.13,637.88 806.21,637.2 809.85,635.24 812.65,632.2 814.31,628.41 814.66,624.29 813.64,620.28 811.38,616.82 808.11,614.29 804.2,612.94 800.06,612.94 796.15,614.29 792.88,616.82 790.62,620.28 789.61,624.29 789.95,628.41 791.61,632.2 794.41,635.24 798.05,637.2 802.13,637.88 " Tension="0.6" IsClosed="false" IsFilled="true" Fill="#FFC3C3C3" StrokeThickness="1" Stroke="#FFB2B2B2" /> 
+
+<Polyline Points="801.18,613.14 794.86,621.48 807.51,629.81 801.18,638.14 " StrokeThickness="1" Stroke="#FFB2B2B2" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<canonicalSplineLib:CanonicalSpline Points=" 916.08,637.88 920.16,637.2 923.8,635.24 926.6,632.2 928.26,628.41 928.61,624.29 927.59,620.28 925.33,616.82 922.06,614.29 918.15,612.94 914.01,612.94 910.1,614.29 906.83,616.82 904.57,620.28 903.56,624.29 903.9,628.41 905.56,632.2 908.36,635.24 912,637.2 916.08,637.88 " Tension="0.6" IsClosed="false" IsFilled="true" Fill="#FFC3C3C3" StrokeThickness="1" Stroke="#FFB2B2B2" /> 
+
+<Polyline Points="915.13,613.14 908.81,621.48 921.46,629.81 915.13,638.14 " StrokeThickness="1" Stroke="#FFB2B2B2" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_BlockNameEquipement}" UnitName="TagName" UnitType="Foxboro_BlockNameEquipement" 
+Param0="EZ2151A" 
+Canvas.Left="408.33" Canvas.Top="604.58" Width="48" Height="12" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_BlockNameEquipement}" UnitName="TagName" UnitType="Foxboro_BlockNameEquipement" 
+Param0="EZ2151B" 
+Canvas.Left="454.36" Canvas.Top="637.96" Width="48" Height="12" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_BlockNameEquipement}" UnitName="TagName" UnitType="Foxboro_BlockNameEquipement" 
+Param0="EZ2151C" 
+Canvas.Left="709.67" Canvas.Top="604.52" Width="48" Height="12" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_BlockNameEquipement}" UnitName="TagName" UnitType="Foxboro_BlockNameEquipement" 
+Param0="EZ2151D" 
+Canvas.Left="751.7" Canvas.Top="637.9" Width="48" Height="12" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_BlockNameEquipement}" UnitName="TagName" UnitType="Foxboro_BlockNameEquipement" 
+Param0="EZ2151E" 
+Canvas.Left="918.01" Canvas.Top="604.37" Width="48" Height="12" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<Polyline Points="5,73 5,83 15,78 5,73 " Fill="#FFADADAD" StrokeThickness="1" Stroke="#FFADADAD" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<Polyline Points="928.5,188 918.5,188 923.5,198 928.5,188 " Fill="#FFADADAD" StrokeThickness="1" Stroke="#FFADADAD" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_Data}" UnitName="TIZ2029" UnitType="Foxboro_Data" 
+Canvas.Left="922.91" Canvas.Top="495.53" Width="55" Height="27" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<TextBlock Canvas.Left="961.75" Canvas.Top="129.12" Width="Auto" Height="Auto" Text="EFFICIENCY" FontSize="10" Foreground="#FF606060" /> 
+
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_IndGen}" UnitName="FRDUTY_DHT4" UnitType="Foxboro_IndGen" 
+Param0="1" 
+Canvas.Left="1028.01" Canvas.Top="59.39" Width="70" Height="28.47" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<controls:MimicFoxboro MimicTemplate="{DynamicResource Foxboro_AlarmStd}" UnitName="TagName" UnitType="Foxboro_AlarmStd" 
+Param0="PAZ2024" 
+Param1="PH" 
+Canvas.Left="306.62" Canvas.Top="44.3" Width="48" Height="25.63" RenderTransformOrigin="0,1">
+</controls:MimicFoxboro>
+<Polyline Points="314.77,77.65 314.77,70.15 " StrokeThickness="1" Stroke="#FF717171" StrokeStartLineCap="Square" StrokeEndLineCap="Square" /> 
+
+
+  </Canvas> 
+</DataTemplate></ResourceDictionary>

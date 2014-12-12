@@ -1,0 +1,81 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+xmlns:CanonicalSplineLib="clr-namespace:CanonicalSplineLib;assembly=CanonicalSplineLib" 
+xmlns:converters="clr-namespace:Foxboro.Emulation.Controls.Converters;assembly=Foxboro.Emulation.Controls"
+xmlns:controls="clr-namespace:Foxboro.Emulation.Controls.Controls;assembly=Foxboro.Emulation.Controls"
+xmlns:common="clr-namespace:Foxboro.Emulation.Controls.Common;assembly=Foxboro.Emulation.Controls"
+xmlns:canonicalSplineLib="clr-namespace:CanonicalSplineLib;assembly=CanonicalSplineLib"
+mc:Ignorable="d"> 
+<ResourceDictionary.MergedDictionaries>
+<ResourceDictionary Source="Translations\WindowCDU4_GOH3_BLANK_Translation.xaml" />
+<ResourceDictionary Source="..\custom.xaml" />
+</ResourceDictionary.MergedDictionaries>
+<MimicTemplate x:Key="WindowCDU4_GOH3_MF" UniqueId="WindowCDU4_GOH3_MF">
+<Grid>
+<!--  Graphic Part  -->
+<ContentPresenter x:Name="GRAPHIC" ContentTemplate="{StaticResource WindowCDU4_GOH3_BLANK_Translation.xaml}" Margin="-38,-8,38,8"  />
+<!-- Normal Graphic Layer Path -->
+<Canvas x:Name="GRAPHIC_OVERLAY"/>
+<!-- FOD Part -->
+<Canvas x:Name='FOD' Visibility="{FODBinding}">
+<!-- Start FOD -->
+<!-- Stop FOD -->
+</Canvas>
+<!-- BL Part -->
+<Canvas x:Name='BL' Visibility='{BLBinding}' Margin="0,24,0,-24" >
+<!-- Start BL -->
+<!-- Stop BL -->
+</Canvas>
+<!-- FAILURE Part -->
+<Mimic MimicTemplate="{StaticResource AnalogFloatBoxMF}" Unit="MF02" Param0="CIN" RenderTransformOrigin="0.667,0.572"   
+Canvas.Left="1086" Canvas.Top="254" Width="60" Height="25" Margin="44,159,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" TextOptions.TextHintingMode="Animated" HorizontalContentAlignment="Center"/>
+<TextBlock Height="49" Canvas.Left="48" TextWrapping="Wrap" Canvas.Top="56" Width="119" Margin="28,86,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="16"><Span Foreground="Black" Language="en-gb"><Run Text="Severe Rain storm"/></Span><LineBreak/><Run Text=""/></TextBlock>
+<TextBlock Height="19" Canvas.Left="48" TextWrapping="Wrap" Text="MF02" Canvas.Top="70" Width="45" Margin="59,140,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+
+
+<Canvas x:Name='FAILURE' Visibility='{FAILUREBinding}' Margin="0,0,0,-37.502" Height="867.266" VerticalAlignment="Bottom" >
+	<!-- Start FAILURE -->
+	<!-- Stop FAILURE -->
+</Canvas>
+<TextBlock Height="23.375" TextWrapping="Wrap" Text="Custom MF" Width="119" Margin="143,2.625,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="16"/>
+<TextBlock Height="29.2" TextWrapping="Wrap" Width="230" Margin="333,327.2,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"><Run Language="zh-cn" Text="GOH3"/></TextBlock>
+<Mimic MimicTemplate="{StaticResource AnalogFloatBoxMF}" Unit="A_GMF03" Param0="OpeningCommand" RenderTransformOrigin="0.667,0.572"   
+	Width="60" Height="33.511" Margin="224,0,0,380" VerticalAlignment="Bottom" HorizontalAlignment="Left" TextOptions.TextHintingMode="Animated" HorizontalContentAlignment="Center"/>
+<TextBlock Height="Auto" TextWrapping="Wrap" Text="GMF03" Width="45" Margin="231,406,0,413.511" VerticalAlignment="Stretch" HorizontalAlignment="Left"/>
+<Mimic MimicTemplate="{StaticResource AnalogFloatBoxMF}" Unit="A_GMF06" Param0="OpeningCommand" RenderTransformOrigin="0.667,0.572"   
+	Width="60" Height="27.837" Margin="0,0,528,385.674" VerticalAlignment="Bottom" HorizontalAlignment="Right" TextOptions.TextHintingMode="Animated" HorizontalContentAlignment="Center"/>
+<TextBlock Height="19" TextWrapping="Wrap" Width="45" Margin="0,406,536,0" VerticalAlignment="Top" HorizontalAlignment="Right"><Run Language="zh-cn" Text="GMF06"/></TextBlock>
+<TextBlock Height="29.6" TextWrapping="Wrap" Width="126" Margin="199,95,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="16"><Span Foreground="Black" FontSize="13.3333333333333" FontFamily="Arial" Language="en-gb"><Run Text="Tube burst HZ2151"/></Span></TextBlock>
+<TextBlock Height="44" TextWrapping="Wrap" Width="129" Margin="374,95,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="16"><Span Foreground="Black" FontSize="13.3333333333333" FontFamily="Arial" Language="en-gb"><Run Text="Foaming of amine absorber TZ2851"/></Span></TextBlock>
+<TextBlock Height="44" TextWrapping="Wrap" Width="Auto" Margin="556,95,651,0" VerticalAlignment="Top" HorizontalAlignment="Stretch" FontSize="16"><Span Foreground="Black" FontSize="13.3333333333333" FontFamily="Arial" Language="en-gb"><Run Text="Crude heater tube burst"/></Span></TextBlock>
+<TextBlock Height="19" TextWrapping="Wrap" Text="MF04" Width="69" Margin="204,140,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+<TextBlock Height="19" TextWrapping="Wrap" Text="MF06" Width="45" Margin="412.5,140,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+<TextBlock Height="19" TextWrapping="Wrap" Text="MF08" Width="62" Margin="570.837,137,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+<Mimic MimicTemplate="{StaticResource AnalogFloatBoxMF}" Unit="A_MF08" Param0="OpeningCommand" RenderTransformOrigin="0.667,0.572"   
+	Width="60" Height="25" Margin="565.837,158,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" TextOptions.TextHintingMode="Animated" HorizontalContentAlignment="Center"/>
+<Mimic MimicTemplate="{StaticResource AnalogFloatBoxMF}" Unit="A_MF04" Param0="OpeningCommand" RenderTransformOrigin="0.667,0.572"   
+	Width="60" Height="25" Margin="203,159,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" TextOptions.TextHintingMode="Animated" HorizontalContentAlignment="Center"/>
+<Mimic MimicTemplate="{StaticResource DigitalFloatBoxMF}" Unit="MF06" Param0="CIN" RenderTransformOrigin="0.667,0.572"   
+	Width="60" Height="25" Margin="393,159,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" TextOptions.TextHintingMode="Animated" HorizontalContentAlignment="Center"/>
+<MimicFoxboro MimicTemplate="{DynamicResource Foxboro_PidaStd}" UnitName="GMF02" UnitType="Foxboro_PidaStd" 
+	Param0="1" 
+	Width="70" Height="Auto" RenderTransformOrigin="0,1" HorizontalAlignment="Left" Margin="57,410.674,0,385.194" VerticalAlignment="Stretch"/>
+<TextBlock Height="31.673" TextWrapping="Wrap" Text="Add Water to Feed" Width="104" HorizontalAlignment="Left" Margin="51,373.674,0,0" VerticalAlignment="Top" d:LayoutOverrides="VerticalAlignment"/>
+<TextBlock Height="31.673" TextWrapping="Wrap" Width="104" HorizontalAlignment="Left" Margin="221,373.674,0,0" VerticalAlignment="Top" d:LayoutOverrides="VerticalAlignment"><Run Language="zh-cn" Text="E2301 Leak"/></TextBlock>
+<Mimic MimicTemplate="{StaticResource AnalogFloatBoxMF}" Unit="A_GMF04" Param0="OpeningCommand" RenderTransformOrigin="0.667,0.572"   
+	Width="60" Height="33.511" Margin="360,0,0,380" VerticalAlignment="Bottom" HorizontalAlignment="Left" TextOptions.TextHintingMode="Animated" HorizontalContentAlignment="Center"/>
+<TextBlock Height="31.673" TextWrapping="Wrap" Width="104" HorizontalAlignment="Left" Margin="357,373.674,0,0" VerticalAlignment="Top" d:LayoutOverrides="VerticalAlignment"><Run Language="zh-cn" Text="E2302 Leak"/></TextBlock>
+<TextBlock Height="Auto" TextWrapping="Wrap" Text="GMF04" Width="45" Margin="365,406,0,413.511" VerticalAlignment="Stretch" HorizontalAlignment="Left"/>
+<Mimic MimicTemplate="{StaticResource AnalogFloatBoxMF}" Unit="A_GMF05" Param0="OpeningCommand" RenderTransformOrigin="0.667,0.572"   
+	Width="60" Height="33.511" Margin="499.5,0,0,380" VerticalAlignment="Bottom" HorizontalAlignment="Left" TextOptions.TextHintingMode="Animated" HorizontalContentAlignment="Center"/>
+<TextBlock Height="31.673" TextWrapping="Wrap" Width="104" HorizontalAlignment="Left" Margin="496.5,373.674,0,0" VerticalAlignment="Top" d:LayoutOverrides="VerticalAlignment"><Run FontSize="13.3333333333333" FontFamily="Arial" Language="en-gb" Text="Tube burst H2301"/><Span Foreground="Black" FontSize="13.3333333333333" FontFamily="Arial" Language="en-gb"><Run Text="1"/></Span></TextBlock>
+<TextBlock Height="Auto" TextWrapping="Wrap" Text="GMF05" Width="45" Margin="506,406,0,413.511" VerticalAlignment="Stretch" HorizontalAlignment="Left"/>
+<TextBlock Height="31.673" TextWrapping="Wrap" Width="113.663" HorizontalAlignment="Right" Margin="0,373.674,498.5,0" VerticalAlignment="Top" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment"><Run FontSize="13.3333333333333" FontFamily="Arial" Language="zh-cn" Text="Runaway Reaction"/></TextBlock>
+<Mimic MimicTemplate="{StaticResource AnalogFloatBoxMF}" Unit="AMBT" Param0="Value" RenderTransformOrigin="0.667,0.572"   
+	Width="60" Height="27.837" Margin="0,151.837,528,0" VerticalAlignment="Top" HorizontalAlignment="Right" TextOptions.TextHintingMode="Animated" HorizontalContentAlignment="Center" d:LayoutOverrides="VerticalAlignment"/>
+<TextBlock Height="31.673" TextWrapping="Wrap" Width="113.663" HorizontalAlignment="Right" Margin="0,103.674,498.5,0" VerticalAlignment="Top" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment"><Run FontSize="13.3333333333333" FontFamily="Arial" Language="zh-cn" Text="Ambient Temp"/></TextBlock>
+</Grid>
+</MimicTemplate>
+</ResourceDictionary>

@@ -1,0 +1,86 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                    xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+                    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                    xmlns:viewModels="clr-namespace:Foxboro.Emulation.Controls.ViewModels;assembly=Foxboro.Emulation.Controls"
+                    xmlns:markupExtensions="clr-namespace:Foxboro.Emulation.Controls.MarkupExtensions;assembly=Foxboro.Emulation.Controls"
+                    mc:Ignorable="d">
+
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/RSI.Emulation.Controls;component/Navigation/Navigation.xaml" />
+        <ResourceDictionary Source="/Foxboro.Emulation.Controls;component/ToolBars/Toolbars.xaml" />
+        <ResourceDictionary Source="ConectionStates.xaml" />
+        <ResourceDictionary Source="TOC.xaml" />
+        <ResourceDictionary Source="/Foxboro.Emulation.Controls;component/ConfigurationEditor.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+
+
+    <!--  Template displayed once simulator available  -->
+    <DataTemplate x:Key="MainPart_Attached">
+        <DockPanel Background="Silver">
+            <DockPanel.DataContext>
+                <viewModels:StartPageViewModel />
+            </DockPanel.DataContext>
+
+            <i:Interaction.Triggers>
+                <i:EventTrigger>
+                    <AssignementAction Path="Viewer.ACCESSMODE" Value="True" />
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+
+            <!--  The Top Bar  -->
+            <Mimic x:Name="topBar"
+                   DockPanel.Dock="Top"
+                   MimicTemplate="{StaticResource TopBar_SaveSimuOnSaveIc}"
+                   Param0="{Binding MimicTemplate.Description,
+                                    ElementName=mainWindow}"
+                   Visibility="{Binding Visibility,
+                                        ElementName=bottomBar}" />
+
+            <!--  The Bottom Bar  -->
+            <Mimic x:Name="bottomBar"
+                   DockPanel.Dock="Bottom"
+                   MimicTemplate="{StaticResource Foxboro_BottomBar}"
+                   Param0="{Binding ElementName=mainWindow}"
+                   Param1="TestsHMI"
+                   Param10="{x:Null}"
+                   Param11="{x:Null}"
+                   Param12="{x:Null}"
+                   Param2="{x:Null}"
+                   Param3="WindowCDU4_GOH3_OVW"
+                   Param4="{x:Null}"
+                   Param5="MalFunctionPage"
+                   Param6="HardPanelPage"
+                   Param7="LinkIOPage"
+                   Param8="{x:Null}"
+                   Param9="{x:Null}"
+                   Visibility="{Binding MimicTemplate.UniqueId,
+                                        ElementName=mainWindow,
+                                        Converter={NotEqualConverter StartPage}}" />
+
+            <Grid Background="White" DockPanel.Dock="Left" Visibility="{markupExtensions:FoxboroConfigurationServiceBinding IsNavigationEnabled}">
+                <ContentPresenter x:Name="TOC" ContentTemplate="{StaticResource TOC.xaml}" />
+            </Grid>
+
+            <Grid DockPanel.Dock="Right" Background="White">
+                <ContentPresenter x:Name="ConfigurationEditor" ContentTemplate="{StaticResource ConfigurationEditor.xaml}" />
+            </Grid>
+            <Viewbox>
+                <WorkspaceControl x:Name="mainWindow" MimicTemplateKey="WindowCDU4_GOH3_OVW" />
+            </Viewbox>
+        </DockPanel>
+    </DataTemplate>
+    <!--  Template displayed once connected but no simulator available  -->
+    <DataTemplate x:Key="MainPart_Detached">
+        <ContentControl Template="{StaticResource FoxboroDetached}" />
+    </DataTemplate>
+
+    <!--  Template displayed once connected but no simulator available  -->
+    <DataTemplate x:Key="MainPart_Disconnected">
+        <ContentControl Template="{StaticResource FoxboroDisconnected}" />
+    </DataTemplate>
+
+</ResourceDictionary>

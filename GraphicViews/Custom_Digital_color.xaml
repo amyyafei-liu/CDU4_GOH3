@@ -1,0 +1,196 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+                    xmlns:wpfTools="http://schemas.rsi.com/WPFTools">
+
+  <!--  ***********************************************************************************************  -->
+  <!--  Graphic Digital Mimic  -->
+  <!--    -->
+  <!--  DataContext = Unit Operation  -->
+  <!--  ***********************************************************************************************  -->
+  <MimicTemplate x:Key="GraphicDigital">
+    <Grid MinWidth="25"
+          MinHeight="25">
+
+      <!--  digitalUnit = <Name of the Unit>IO  -->
+      <UnitVariable x:Name="digitalUnit" Path="{Binding Name, Converter={ConcatConverter IO}}" />
+
+      <!--  digitalParam = Reference on parameter Value included in digitalUnit  -->
+      <ParameterVariableOfUnit x:Name="digitalParam"
+                               Path="Value"/>
+                               <!--  SourceUnit="{VariableValue digitalUnit}" /> -->
+
+      <!--  Graphic : Gray if digitalParam=true, transparent if not  -->
+      <Border Background="{Binding Value.ModelValue,
+                                   ElementName=digitalParam,
+                                   Converter={IfThenElse Black:Transparent}}"
+              BorderBrush="Green"
+              BorderThickness="1" />
+    </Grid>
+  </MimicTemplate>
+
+  <!--  ***********************************************************************************************  -->
+  <!--  Analog Float Box Definitinion  -->
+  <!--  DataContext = Unit Operation  -->
+  <!--  Param0 = Parameter Name to use  -->
+  <!--  ***********************************************************************************************  -->
+  <MimicTemplate x:Key="AnalogFloatBox"
+                 Param0Description="Parameter Name"
+                 TargetType="{x:Type Mimic}">
+
+    <Grid Background="Transparent" Cursor="Hand">
+
+      <!--  Parameter Ref.  -->
+      <ParameterVariable x:Name="parameter" Path="{MimicBinding Param0}" />
+
+      <Border BorderBrush="Black"
+              BorderThickness="1"
+              Padding="5">
+
+        <!--  On Click ...  -->
+        <i:Interaction.Triggers>
+          <i:EventTrigger EventName="MouseLeftButtonDown">
+
+            <!--  ... Open Window  -->
+            <OpenWindowAction x:Name="OpenWindow_Maintenance1"
+                              Title="Analog Value"
+                              Param0="{Binding Parameter,
+                                               ElementName=parameter}">
+              <OpenWindowAction.MimicTemplate>
+
+                <!--  Window Content Definition  -->
+                <MimicTemplate Param0Description="Parameter" TargetType="{x:Type Mimic}">
+                  <Border FocusManager.FocusedElement="{Binding ElementName=tb}" Padding="5">
+                    <Grid>
+                      <Grid.RowDefinitions>
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="5" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="5" />
+                      </Grid.RowDefinitions>
+
+                      <ParameterVariable x:Name="parameter" Value="{MimicBinding Param0}" />
+
+                      <!--  Title  -->
+                      <Border Grid.Row="1"
+                              Background="White"
+                              BorderBrush="Black"
+                              BorderThickness="2"
+                              Padding="5">
+                        <TextBlock HorizontalAlignment="Center"
+                                   FontWeight="Bold"
+                                   NumericTextBoxAttachedPropertie.IsEnabled="True"
+                                   Text="{Binding Parameter.ShortPath,
+                                                  ElementName=parameter}" />
+                      </Border>
+
+                      <!--  Input  -->
+                      <TextBoxEnter x:Name="tb"
+                                    Grid.Row="3"
+                                    Width="80"
+                                    Height="22"
+                                    HorizontalAlignment="Center"
+                                    HorizontalContentAlignment="Right"
+                                    Text="{Binding Parameter.ModelValue,
+                                                   ElementName=parameter}">
+                        <i:Interaction.Behaviors>
+                          <wpfTools:SelectTextOnFocusBehavior />
+                        </i:Interaction.Behaviors>
+                      </TextBoxEnter>
+                    </Grid>
+                  </Border>
+                </MimicTemplate>
+              </OpenWindowAction.MimicTemplate>
+            </OpenWindowAction>
+          </i:EventTrigger>
+        </i:Interaction.Triggers>
+
+        <!--  Displayed Value  -->
+        <TextBlock Text="{Binding Parameter.ModelValue, ElementName=parameter, Converter={FormatConverter F2}}" />
+      </Border>
+    </Grid>
+  </MimicTemplate>
+
+  <!--  ***********************************************************************************************  -->
+  <!--  Digital Float Box Definitinion  -->
+  <!--  DataContext = Unit Operation  -->
+  <!--  Param0 = Parameter Name to use  -->
+  <!--  ***********************************************************************************************  -->
+  <MimicTemplate x:Key="DigitalFloatBox"
+                 Param0Description="Parameter Name"
+                 TargetType="{x:Type Mimic}">
+    <Grid Background="{Binding Parameter.ModelValue, ElementName=parameter,Converter={IfThenElse Green:Transparent}}" Cursor="Hand">
+      <ParameterVariable x:Name="parameter" Path="{MimicBinding Param0}" />
+      <Border BorderBrush="Black"
+              BorderThickness="1"
+              Padding="5">
+        <i:Interaction.Triggers>
+          <i:EventTrigger EventName="MouseLeftButtonDown">
+            <OpenWindowAction x:Name="OpenWindow_Maintenance1"
+                              Title="Digital Value"
+                              Param0="{Binding Parameter,
+                                               ElementName=parameter}">
+              <OpenWindowAction.MimicTemplate>
+                <MimicTemplate Param0Description="Parameter" TargetType="{x:Type Mimic}">
+                  <Border FocusManager.FocusedElement="{Binding ElementName=tb}" Padding="5">
+                    <Grid>
+                      <Grid.RowDefinitions>
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="5" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="5" />
+                      </Grid.RowDefinitions>
+
+                      <ParameterVariable x:Name="parameter" Value="{MimicBinding Param0}" />
+                      <Border Grid.Row="1"
+                              Background="White"
+                              BorderBrush="Black"
+                              BorderThickness="2"
+                              Padding="5">
+                      </Border>
+
+                      <StackPanel Grid.Row="3" Orientation="Horizontal">
+
+                        <Button x:Name="CLOSE"
+                                Width="80"
+                                Height="25"
+                                Content="False">
+                          <Button.Command>
+                            <SetValueCommandExt IsEnabled="{Binding Parameter.ModelValue,
+                                                                    Converter={IsNotEqualTo 0},
+                                                                    ElementName=parameter}"
+                                                Parameter="{Binding Parameter,
+                                                                    ElementName=parameter}"
+                                                Value="False" />
+                          </Button.Command>
+                        </Button>
+
+                        <!--  CODE IDENTIQUE a OpenCloseButtons sauf que ConverterParameter n'arrive pas a le binder sur une variable  -->
+                        <Button x:Name="OPEN"
+                                Width="80"
+                                Height="25"
+                                Margin="10,0,0,0"
+                                Content="True"
+                                IsEnabled="{Binding IsEnabled,
+                                                    ElementName=CLOSE,
+                                                    Converter={Not}}">
+                          <Button.Command>
+                            <SetValueCommandExt Parameter="{Binding Parameter, ElementName=parameter}" Value="True" />
+                          </Button.Command>
+                        </Button>
+                      </StackPanel>
+                    </Grid>
+                  </Border>
+                </MimicTemplate>
+              </OpenWindowAction.MimicTemplate>
+            </OpenWindowAction>
+          </i:EventTrigger>
+        </i:Interaction.Triggers>
+
+      </Border>
+    </Grid>
+  </MimicTemplate>
+
+</ResourceDictionary>
