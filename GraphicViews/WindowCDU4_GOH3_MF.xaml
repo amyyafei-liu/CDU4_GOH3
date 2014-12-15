@@ -31,7 +31,7 @@ mc:Ignorable="d">
 <!-- FAILURE Part -->
 <Mimic MimicTemplate="{StaticResource AnalogFloatBoxMF}" Unit="MF02" Param0="CIN" RenderTransformOrigin="0.667,0.572"   
 Canvas.Left="1086" Canvas.Top="254" Width="60" Height="25" Margin="170,159,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" TextOptions.TextHintingMode="Animated" HorizontalContentAlignment="Center"/>
-<TextBlock Height="49" Canvas.Left="48" TextWrapping="Wrap" Canvas.Top="56" Width="119" Margin="154,80,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="16"><Span Foreground="Black" Language="en-gb"><Run Text="Severe Rain storm"/></Span><LineBreak/><Run Text=""/></TextBlock>
+<TextBlock Height="49" Canvas.Left="48" TextWrapping="Wrap" Canvas.Top="56" Width="100" Margin="154,80,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="16"><Span Foreground="Black" Language="en-gb"><Run Text="Severe Rain storm"/></Span><LineBreak/><Run Text=""/></TextBlock>
 <TextBlock Height="19" Canvas.Left="48" TextWrapping="Wrap" Text="MF02" Canvas.Top="70" Width="45" Margin="182,140,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
 
 
@@ -90,7 +90,7 @@ Canvas.Left="1086" Canvas.Top="254" Width="60" Height="25" Margin="170,159,0,0" 
 	Width="60" Height="25" Margin="0,159,576.5,0" VerticalAlignment="Top" HorizontalAlignment="Right" TextOptions.TextHintingMode="Animated" HorizontalContentAlignment="Center"/>
 <TextBlock Height="44" TextWrapping="Wrap" Width="Auto" Margin="633.5,79.674,513.5,0" VerticalAlignment="Top" HorizontalAlignment="Stretch" FontSize="16"><Run FontSize="13.3333333333333" FontFamily="Arial" Text="High DP "/><LineBreak/><Run FontSize="13.3333333333333" FontFamily="Arial" Text="RZ2156"/></TextBlock>
 <TextBlock Height="29.2" TextWrapping="Wrap" Width="230" Margin="333,42.2,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Text="CDU4"/>
-<TextBlock Height="Auto" TextWrapping="Wrap" Text="GMF07" Width="69" Margin="0,405.5,341.5,413.931" VerticalAlignment="Stretch" HorizontalAlignment="Right" d:LayoutOverrides="VerticalAlignment"/>
+<TextBlock Height="Auto" TextWrapping="Wrap" Text="GMF07 R2301" Width="80" Margin="0,405.5,341.5,413.931" VerticalAlignment="Stretch" HorizontalAlignment="Right" d:LayoutOverrides="VerticalAlignment"/>
 <Mimic MimicTemplate="{StaticResource AnalogFloatBoxMF}" Unit="GMF07_01" Param0="Value" RenderTransformOrigin="0.667,0.572"   
 	Width="60" Height="27.96" Margin="0,0,350,385.971" VerticalAlignment="Bottom" HorizontalAlignment="Right" TextOptions.TextHintingMode="Animated" HorizontalContentAlignment="Center" d:LayoutOverrides="VerticalAlignment"/>
 <TextBlock Height="30" TextWrapping="Wrap" Width="138.663" Margin="0,372.174,287,0" VerticalAlignment="Top" HorizontalAlignment="Right" FontSize="16"><Run FontSize="13.3333333333333" FontFamily="Arial" Text="High DP R2301/2302"/></TextBlock>
@@ -101,9 +101,7 @@ Canvas.Left="1086" Canvas.Top="254" Width="60" Height="25" Margin="170,159,0,0" 
 <Mimic x:Name='_H2_ex_500_HRU_HPU' Unit='H2_ex_500_HRU_HPU' MimicTemplate='{DynamicResource INLETBL_ABB_BL}' HorizontalAlignment="Right" Margin="0,0,189.663,380" VerticalAlignment="Bottom"/>
 <TextBlock Height="Auto" TextWrapping="Wrap" Text="GMF08" Width="69" Margin="0,405.5,161.5,413.931" VerticalAlignment="Stretch" HorizontalAlignment="Right" d:LayoutOverrides="VerticalAlignment"/>
 <TextBlock Height="30" TextWrapping="Wrap" Width="120" Margin="0,372.174,119,0" VerticalAlignment="Top" HorizontalAlignment="Right" FontSize="16"><Run FontSize="13.3333333333333" FontFamily="Arial" Text="HPU purity"/></TextBlock>
-<Mimic MimicTemplate="{StaticResource AnalogFloatBoxMF}" Unit="IntegModel" Param0="CIN" RenderTransformOrigin="0.667,0.572"   
-	Width="60" Height="27.837" Margin="573.163,0,0,199.348" VerticalAlignment="Bottom" HorizontalAlignment="Left" TextOptions.TextHintingMode="Animated" HorizontalContentAlignment="Center"/>
-<TextBlock Height="Auto" TextWrapping="Wrap" Width="Auto" Margin="521.5,587.674,612.5,224.785" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" FontSize="16"><Run FontSize="13.3333333333333" FontFamily="Arial" Language="zh-cn" Text="Integrating CDU4 and GOH3"/></TextBlock>
+<TextBlock Height="Auto" TextWrapping="Wrap" Text="GMF07 R2302" Width="80" Margin="0,405.5,256.5,413.931" VerticalAlignment="Stretch" HorizontalAlignment="Right" d:LayoutOverrides="VerticalAlignment"/>
 </Grid>
 </MimicTemplate>
 </ResourceDictionary>
