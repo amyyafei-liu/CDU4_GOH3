@@ -27,6 +27,7 @@ mc:Ignorable="d">
 <Mimic x:Name='_GZ2101A' Unit='GZ2101A' MimicTemplate='{DynamicResource FILTER_ABB_FOD}' Height="15" Width="15" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="233.5" Canvas.Top="365"/>
 <Mimic x:Name='_GZ2101B' Unit='GZ2101B' MimicTemplate='{DynamicResource FILTER_ABB_FOD}' Height="15" Width="15" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="232.5" Canvas.Top="478"/>
 <Mimic x:Name='_GZ2101C' Unit='GZ2101C' MimicTemplate='{DynamicResource FILTER_ABB_FOD}' Height="15" Width="15" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="237.5" Canvas.Top="589"/>
+<Mimic x:Name='_2101MV05_Copy' Unit='2101MV09' MimicTemplate='{DynamicResource HANDVALVE_ABB_FOD}' Canvas.Top='480' Canvas.Left='526.8'/>
 
 			<!-- Stop FOD -->
 		</Canvas>

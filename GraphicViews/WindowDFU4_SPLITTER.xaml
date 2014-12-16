@@ -470,6 +470,7 @@ mc:Ignorable="d">
 		</ed:BlockArrow.RenderTransform>
 	</ed:BlockArrow>
 	<TextBlock FontSize="10.5" Foreground="#FF606060" TextAlignment="Center" Margin="0" Height="13.89" Width="41.69" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Canvas.Left="1246.2" Canvas.Top="653.21" ><Run Language="zh-cn" Text="TZ2201"/></TextBlock>
+	<Mimic x:Name='_2202BMV12_Copy' Unit='2202BMV18' MimicTemplate='{DynamicResource HANDVALVE_ABB_FOD}' Canvas.Top='223.2' Canvas.Left='807.499'/>
 <!-- Stop FOD -->
 
 </Canvas>

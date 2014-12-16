@@ -81,6 +81,14 @@ mc:Ignorable="d">
 				<!-- Stop FAILURE -->
 
 			</Canvas>
+			<Canvas x:Name='BL' Visibility='{BLBinding}' >
+	<!-- Start BL -->
+			<Mimic x:Name="_LGO4_Copy"
+				MimicTemplate="{DynamicResource INLETBL_ABB_FOD}"
+				Unit="COND" HorizontalAlignment="Left" Margin="107.58,353.067,0,373.183" VerticalAlignment="Stretch" RenderTransformOrigin="3.309,1.919" d:LayoutOverrides="Height" />
+	<!-- Stop BL -->
+</Canvas>
+
 			<MimicFoxboro MimicTemplate="{DynamicResource Foxboro_FeedBackV}" UnitName="E2303A" UnitType="Foxboro_FeedBackV" 
 				Width="20" Height="25" RenderTransformOrigin="0,1" Margin="600.02,330.333,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Unit="TEST1"/>
 			<MimicFoxboro MimicTemplate="{DynamicResource Foxboro_FeedBackV}" UnitName="E2303B" UnitType="Foxboro_FeedBackV" 

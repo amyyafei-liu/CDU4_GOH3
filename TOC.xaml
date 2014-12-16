@@ -10,6 +10,20 @@
                </i:EventTrigger>
              </i:Interaction.Triggers>
        </ListBoxItem>
+      <ListBoxItem Content="CDU4 OVERVIEW" Tag="Windowcdu4_overview">
+        <i:Interaction.Triggers>
+          <i:EventTrigger EventName="MouseUp">
+            <ChainViewAction MimicTemplateKey="Windowcdu4_overview" />
+          </i:EventTrigger>
+        </i:Interaction.Triggers>
+      </ListBoxItem>
+            <ListBoxItem Content="GOH3 OVERVIEW" Tag="WindowGOH3_OVERVIEW">
+              <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseUp">
+                  <ChainViewAction MimicTemplateKey="WindowGOH3_OVERVIEW" />
+                </i:EventTrigger>
+              </i:Interaction.Triggers>
+            </ListBoxItem>
       <ListBoxItem Content="CDU4 BLENDER" Tag="WindowCDU4_BLENDER">
         <i:Interaction.Triggers>
           <i:EventTrigger EventName="MouseUp">
@@ -105,13 +119,6 @@
         <i:Interaction.Triggers>
           <i:EventTrigger EventName="MouseUp">
             <ChainViewAction MimicTemplateKey="WindowCDU4_LGO" />
-          </i:EventTrigger>
-        </i:Interaction.Triggers>
-      </ListBoxItem>
-      <ListBoxItem Content="CDU4 OVERVIEW" Tag="Windowcdu4_overview">
-        <i:Interaction.Triggers>
-          <i:EventTrigger EventName="MouseUp">
-            <ChainViewAction MimicTemplateKey="Windowcdu4_overview" />
           </i:EventTrigger>
         </i:Interaction.Triggers>
       </ListBoxItem>
@@ -322,13 +329,6 @@
               <i:Interaction.Triggers>
                 <i:EventTrigger EventName="MouseUp">
                   <ChainViewAction MimicTemplateKey="WindowGOH3_FURNACE_MONITORING" />
-                </i:EventTrigger>
-              </i:Interaction.Triggers>
-            </ListBoxItem>
-            <ListBoxItem Content="GOH3 OVERVIEW" Tag="WindowGOH3_OVERVIEW">
-              <i:Interaction.Triggers>
-                <i:EventTrigger EventName="MouseUp">
-                  <ChainViewAction MimicTemplateKey="WindowGOH3_OVERVIEW" />
                 </i:EventTrigger>
               </i:Interaction.Triggers>
             </ListBoxItem>
