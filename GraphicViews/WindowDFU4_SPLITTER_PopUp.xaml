@@ -23,12 +23,12 @@ mc:Ignorable="d">
 	<Canvas x:Name='FOD' Visibility="{FODBinding}" Margin="-4.5,-12,4.5,-11.273" d:LayoutOverrides="VerticalAlignment">
 
 <!-- Start FOD -->
-		<TextBlock Height="14" Canvas.Left="41.999" TextWrapping="Wrap" Canvas.Top="148.667" Width="22.667" FontSize="9.333"><Run Language="zh-cn" Text="HP"/></TextBlock>
+		<TextBlock Height="14" Canvas.Left="74.999" TextWrapping="Wrap" Canvas.Top="148.667" Width="22.667" FontSize="9.333"><Run Language="zh-cn" Text="HP"/></TextBlock>
 		<TextBlock Height="14" Canvas.Left="136.666" TextWrapping="Wrap" Canvas.Top="148.667" Width="22.667" FontSize="9.333"><Run Language="zh-cn" Text="LP"/></TextBlock>
 
 <!-- Start FOD -->
 		<Mimic x:Name='_2202BMV06' Unit='2202BMV06' MimicTemplate='{DynamicResource HANDVALVE_ABB_FOD}' Canvas.Top='101' Canvas.Left='208'/>
-		<ed:BlockArrow Fill="#FF717171" Height="3" Stroke="#FFA0A0A0" StrokeThickness="2" Width="94.833" Orientation="RIGHT" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="49.367" Canvas.Top="161"/>
+		<ed:BlockArrow Fill="#FF717171" Height="3" Stroke="#FFA0A0A0" StrokeThickness="2" Width="75.868" Orientation="RIGHT" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="69.666" Canvas.Top="161"/>
 		<Mimic x:Name='_2202BMV08' Unit='2202BMV08' MimicTemplate='{DynamicResource HANDVALVE_ABB_FOD}' Canvas.Top='179.5' Canvas.Left='172.5' RenderTransformOrigin="0.5,0.5">
 			<Mimic.RenderTransform>
 				<TransformGroup>

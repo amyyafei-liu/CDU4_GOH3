@@ -21,14 +21,6 @@
     <Reference Include="BP.Emulation.Controls">
       <HintPath>C:\Program Files (x86)\Microsoft Expression\Blend 4\EmulationAssemblies\Foxboro\BP.Emulation.Controls.dll</HintPath>
     </Reference>
-        <Reference Include="RSI.Common.Localization.WpfExtensions">
-          <HintPath>C:\Program Files (x86)\Microsoft Expression\Blend 4\Extensions\RSI.Common.Localization.WpfExtensions.dll</HintPath>
-          <Private>False</Private>
-        </Reference>
-        <Reference Include="RSI.IndissPlus.Plots">
-          <HintPath>C:\Program Files (x86)\Microsoft Expression\Blend 4\Extensions\RSI.IndissPlus.Plots.dll</HintPath>
-          <Private>False</Private>
-    </Reference>
     <Reference Include="CanonicalSplineLib">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Program Files (x86)\Microsoft Expression\Blend 4\EmulationAssemblies\Foxboro\CanonicalSplineLib.dll</HintPath>

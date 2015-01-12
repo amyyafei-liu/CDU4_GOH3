@@ -39,7 +39,7 @@ Canvas.Left="1086" Canvas.Top="254" Width="60" Height="25" Margin="164,158,0,0" 
 	<!-- Start FAILURE -->
 	<!-- Stop FAILURE -->
 </Canvas>
-<TextBlock Height="23.375" TextWrapping="Wrap" Text="Custom MF" Width="119" Margin="143,16.125,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="16"/>
+<TextBlock Height="23.375" TextWrapping="Wrap" Text="Custom MF" Width="119" Margin="143,23.625,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="16"/>
 <TextBlock Height="29.2" TextWrapping="Wrap" Width="230" Margin="333,327.2,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"><Run Language="zh-cn" Text="GOH3"/></TextBlock>
 <Mimic MimicTemplate="{StaticResource AnalogFloatBoxMF}" Unit="A_GMF03" Param0="OpeningCommand" RenderTransformOrigin="0.667,0.572"   
 	Width="60" Height="33.511" Margin="263,0,0,380" VerticalAlignment="Bottom" HorizontalAlignment="Left" TextOptions.TextHintingMode="Animated" HorizontalContentAlignment="Center"/>
@@ -88,7 +88,7 @@ Canvas.Left="1086" Canvas.Top="254" Width="60" Height="25" Margin="164,158,0,0" 
 <TextBlock Height="19" TextWrapping="Wrap" Text="MF07" Width="69" Margin="0,140,568,0" VerticalAlignment="Top" HorizontalAlignment="Right"/>
 <Mimic MimicTemplate="{StaticResource AnalogFloatBoxMF}" Unit="MF07" Param0="Value" RenderTransformOrigin="0.667,0.572"   
 	Width="Auto" Height="25" Margin="634.163,158,591.5,0" VerticalAlignment="Top" HorizontalAlignment="Stretch" TextOptions.TextHintingMode="Animated" HorizontalContentAlignment="Center"/>
-<TextBlock Height="44" TextWrapping="Wrap" Margin="636.5,79.674,572.5,0" VerticalAlignment="Top" FontSize="16" d:LayoutOverrides="HorizontalAlignment"><Run FontSize="13.3333333333333" FontFamily="Arial" Text="High DP "/><LineBreak/><Run FontSize="13.3333333333333" FontFamily="Arial" Text="RZ2156"/></TextBlock>
+<TextBlock Height="44" TextWrapping="Wrap" Margin="635,79.674,574,0" VerticalAlignment="Top" FontSize="16" d:LayoutOverrides="HorizontalAlignment"><Run FontSize="13.3333333333333" FontFamily="Arial" Text="High DP "/><LineBreak/><Run FontSize="13.3333333333333" FontFamily="Arial" Text="RZ2156"/></TextBlock>
 <TextBlock Height="29.2" TextWrapping="Wrap" Width="230" Margin="333,42.2,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Text="CDU4"/>
 <TextBlock Height="Auto" TextWrapping="Wrap" Text="GMF07 R2301" Width="80" Margin="0,405.5,341.5,413.931" VerticalAlignment="Stretch" HorizontalAlignment="Right" d:LayoutOverrides="VerticalAlignment"/>
 <Mimic MimicTemplate="{StaticResource AnalogFloatBoxMF}" Unit="GMF07_01" Param0="Value" RenderTransformOrigin="0.667,0.572"   

@@ -1,4 +1,4 @@
-﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
 xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -33,9 +33,6 @@ mc:Ignorable="d">
 	<!-- Start FAILURE -->
 	<!-- Stop FAILURE -->
 </Canvas>
-<Mimic MimicTemplate="{StaticResource DigitalFloatBoxMF}" Unit="IntegModel" Param0="CIN" RenderTransformOrigin="0.667,0.572"   
-	Width="Auto" Height="27.837" Margin="611.663,236.612,632.804,0" VerticalAlignment="Top" HorizontalAlignment="Stretch" TextOptions.TextHintingMode="Animated" HorizontalContentAlignment="Center"/>
-<TextBlock Height="Auto" TextWrapping="Wrap" Width="Auto" Margin="560,216,574,615.752" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" FontSize="16"><Run FontSize="13.3333333333333" FontFamily="Arial" Language="zh-cn" Text="Integrating CDU4 and GOH3"/></TextBlock>
 </Grid>
 </MimicTemplate>
 </ResourceDictionary>

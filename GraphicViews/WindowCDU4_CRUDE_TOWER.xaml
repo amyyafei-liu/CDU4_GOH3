@@ -35,7 +35,6 @@ mc:Ignorable="d">
 <!-- FOD Part -->
 <Canvas x:Name='FOD' Visibility="{FODBinding}">
 <!-- Start FOD -->
-<ed:BlockArrow Fill="#FF717171" Height="3" Canvas.Left="798.089" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="365.911" Width="48.5" Orientation="LEFT"/>
 
 
 
@@ -125,9 +124,12 @@ mc:Ignorable="d">
 			</i:EventTrigger>
 		</i:Interaction.Triggers>
 	</Button>
-	<Mimic x:Name='_2107MV19' Unit='2107MV19' MimicTemplate='{DynamicResource HANDVALVE_ABB_FOD}' HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="817" Canvas.Top="362.991"/>
+	<ed:BlockArrow Fill="#FF717171" Height="3" Canvas.Left="798.089" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="365.911" Width="48.5" Orientation="LEFT"/>
 	<ed:BlockArrow Fill="#FF717171" Height="3" Canvas.Left="784.089" Stroke="#FFA0A0A0" StrokeThickness="2" Canvas.Top="242.911" Width="48.5" Orientation="LEFT"/>
-	<Mimic x:Name='_2107MV19_Copy' Unit='2108MV24' MimicTemplate='{DynamicResource HANDVALVE_ABB_FOD}' HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="798" Canvas.Top="239.991"/>
+	<ed:BlockArrow Fill="#FF717171" Height="3" Stroke="#FFA0A0A0" StrokeThickness="2" Width="48.5" Orientation="LEFT" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="835.089" Canvas.Top="721.911"/>
+	<Mimic x:Name='_2107MV19' Unit='2107MV19' MimicTemplate='{DynamicResource HANDVALVE_ABB_FOD}' HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="817" Canvas.Top="362.991"/>
+	<Mimic x:Name='_2108MV23' Unit='2108MV23' MimicTemplate='{DynamicResource HANDVALVE_ABB_FOD}' HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="854" Canvas.Top="718.991"/>
+	<Mimic x:Name='_2108MV24' Unit='2108MV24' MimicTemplate='{DynamicResource HANDVALVE_ABB_FOD}' HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="798" Canvas.Top="239.991"/>
 
 
 

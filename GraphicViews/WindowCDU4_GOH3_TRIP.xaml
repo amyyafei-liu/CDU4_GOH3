@@ -1,4 +1,4 @@
-﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
 xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -29,8 +29,73 @@ mc:Ignorable="d">
 <!-- Stop BL -->
 </Canvas>
 <!-- FAILURE Part -->
-<TextBlock Height="23.375" TextWrapping="Wrap" Text="Trip Button" Width="119" Margin="143,2.625,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="16"/>
-<TextBlock Height="44" TextWrapping="Wrap" Text="Pending" Width="168" Margin="199,86,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="16"/>
+<Mimic MimicTemplate="{StaticResource AnalogFloatBoxMF}" Unit="A_MF01" Param0="OpeningCommand" RenderTransformOrigin="0.667,0.572"   
+Canvas.Left="1086" Canvas.Top="254" Width="60" Height="25" Margin="44,159,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" TextOptions.TextHintingMode="Animated" HorizontalContentAlignment="Center"/>
+<TextBlock Height="49" Canvas.Left="48" TextWrapping="Wrap" Text="Charge Heater Tube Leak" Canvas.Top="56" Width="119" Margin="28,86,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="16"/>
+<TextBlock Height="19" Canvas.Left="48" TextWrapping="Wrap" Text="MF01" Canvas.Top="70" Width="30" Margin="59,140,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+
+
+<Canvas x:Name='FAILURE' Visibility='{FAILUREBinding}' Margin="0,0,0,-37.502" Height="867.266" VerticalAlignment="Bottom" >
+	<!-- Start FAILURE -->
+	<!-- Stop FAILURE -->
+</Canvas>
+<TextBlock Height="23.375" TextWrapping="Wrap" Text="Custom MF" Width="119" Margin="143,2.625,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="16"/>
+<Mimic MimicTemplate="{StaticResource AnalogFloatBoxMF}" Unit="A_MF06" Param0="OpeningCommand" RenderTransformOrigin="0.667,0.572"   
+	Width="60" Height="25" Margin="250,341,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" TextOptions.TextHintingMode="Animated" HorizontalContentAlignment="Center"/>
+<TextBlock Height="19" TextWrapping="Wrap" Text="MF06" Width="30" Margin="265,322,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+<TextBlock Height="65" TextWrapping="Wrap" Text="Fresh Feed/Stripper Bottom Excanger Leak(1301)" Width="151" Margin="19,250,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="16"/>
+<Mimic MimicTemplate="{StaticResource AnalogFloatBoxMF}" Unit="A_MF05" Param0="OpeningCommand" RenderTransformOrigin="0.667,0.572"   
+	Width="60" Height="25" Margin="44,341,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" TextOptions.TextHintingMode="Animated" HorizontalContentAlignment="Center"/>
+<TextBlock Height="19" TextWrapping="Wrap" Text="MF05" Width="30" Margin="59,322,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+<Mimic MimicTemplate="{StaticResource AnalogFloatBoxMF}" Unit="A_MF07" Param0="OpeningCommand" RenderTransformOrigin="0.667,0.572"   
+	Width="60" Height="25" Margin="468,341,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" TextOptions.TextHintingMode="Animated" HorizontalContentAlignment="Center"/>
+<TextBlock Height="19" TextWrapping="Wrap" Text="MF07" Width="30" Margin="483,322,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+<Mimic MimicTemplate="{StaticResource AnalogFloatBoxMF}" Unit="A_MF08" Param0="OpeningCommand" RenderTransformOrigin="0.667,0.572"   
+	Width="60" Height="25" Margin="0,341,528,0" VerticalAlignment="Top" HorizontalAlignment="Right" TextOptions.TextHintingMode="Animated" HorizontalContentAlignment="Center"/>
+<TextBlock Height="19" TextWrapping="Wrap" Text="MF08" Width="30" Margin="0,322,543,0" VerticalAlignment="Top" HorizontalAlignment="Right"/>
+<TextBlock Height="72" TextWrapping="Wrap" Text="Leaky In Either Stripper OVHD Drum 1210,CHPS 1205,Vac Sep Drum 1211" Width="182" Margin="15,0,0,324" VerticalAlignment="Bottom" HorizontalAlignment="Left" FontSize="16"/>
+<Mimic MimicTemplate="{StaticResource AnalogFloatBoxMF}" Unit="A_MF10" Param0="OpeningCommand" RenderTransformOrigin="0.667,0.572"   
+	Width="60" Height="27.96" Margin="265,0,0,268" VerticalAlignment="Bottom" HorizontalAlignment="Left" TextOptions.TextHintingMode="Animated" HorizontalContentAlignment="Center" d:LayoutOverrides="VerticalAlignment"/>
+<TextBlock Height="19" TextWrapping="Wrap" Text="MF10" Width="30" Margin="281,515,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+<TextBlock Height="44" TextWrapping="Wrap" Text="Foaming In Either Absorber 1101 or 1103" Width="168" Margin="199,86,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="16"/>
+<TextBlock Height="44" TextWrapping="Wrap" Text="Runaway Reactor" Width="129" Margin="434,86,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="16"/>
+<TextBlock Height="69" TextWrapping="Wrap" Text="Reactor Feed/Effluent Exchanger Leak(1302)" Width="146" Margin="221,248,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="16"/>
+<TextBlock Height="69" TextWrapping="Wrap" Text="HHPS Overhead/Recycle Gas Exchanger Leak(1303)" Width="158" Margin="435,242,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="16"/>
+<TextBlock Height="43" TextWrapping="Wrap" Text="Water In Feed" Width="109" Margin="252,0,0,333" VerticalAlignment="Bottom" HorizontalAlignment="Left" FontSize="16"/>
+<TextBlock Height="44" TextWrapping="Wrap" Text="Flooding In Stripper 1102" Width="129" Margin="0,86,490,0" VerticalAlignment="Top" HorizontalAlignment="Right" FontSize="16"/>
+<TextBlock Height="50" TextWrapping="Wrap" Text="Stripper Preheater Leak(1307)" Width="135" Margin="0,243,483,0" VerticalAlignment="Top" HorizontalAlignment="Right" FontSize="16"/>
+<TextBlock Height="19" TextWrapping="Wrap" Text="MF02-1101" Width="69" Margin="204,140,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+<TextBlock Height="19" TextWrapping="Wrap" Text="MF03" Width="30" Margin="483,140,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+<TextBlock Height="19" TextWrapping="Wrap" Text="MF04 TOP" Width="62" Margin="0,143,553,0" VerticalAlignment="Top" HorizontalAlignment="Right"/>
+<TextBlock Height="19" TextWrapping="Wrap" Text="MF09" Width="30" Margin="91,0,0,310" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+<Mimic MimicTemplate="{StaticResource AnalogFloatBoxMF}" Unit="TOP_FLD" Param0="OpeningCommand" RenderTransformOrigin="0.667,0.572"   
+	Width="60" Height="25" Margin="0,164,554,0" VerticalAlignment="Top" HorizontalAlignment="Right" TextOptions.TextHintingMode="Animated" HorizontalContentAlignment="Center"/>
+<TextBlock Height="19" TextWrapping="Wrap" Text="MF04 BOT" Width="63" Margin="0,193,551,0" VerticalAlignment="Top" HorizontalAlignment="Right"/>
+<Mimic MimicTemplate="{StaticResource AnalogFloatBox}" Unit="1102_FLD_TOP_SetPoint" Param0="Value" RenderTransformOrigin="0.667,0.572"   
+	Width="60" Height="25" Margin="0,163,462,0" VerticalAlignment="Top" HorizontalAlignment="Right" TextOptions.TextHintingMode="Animated" HorizontalContentAlignment="Center"/>
+<TextBlock Height="44" TextWrapping="Wrap" Text="Flooding In Stripper 1102" Width="129" Margin="0,86,490,0" VerticalAlignment="Top" HorizontalAlignment="Right" FontSize="16"/>
+<TextBlock Height="19" TextWrapping="Wrap" Text="1101 top flooding SP" Width="122" Margin="0,143,401,0" VerticalAlignment="Top" HorizontalAlignment="Right"/>
+<Mimic MimicTemplate="{StaticResource AnalogFloatBoxMF}" Unit="BTM_FLD" Param0="OpeningCommand" RenderTransformOrigin="0.667,0.572"   
+	Width="60" Height="25" Margin="0,212,554,0" VerticalAlignment="Top" HorizontalAlignment="Right" TextOptions.TextHintingMode="Animated" HorizontalContentAlignment="Center"/>
+<TextBlock Height="19" TextWrapping="Wrap" Text="1101 btm flooding SP" Width="122" Margin="0,189,400,0" VerticalAlignment="Top" HorizontalAlignment="Right"/>
+<Mimic MimicTemplate="{StaticResource AnalogFloatBox}" Unit="1102_FLD_BTM_SetPoint" Param0="Value" RenderTransformOrigin="0.667,0.572"   
+	Width="60" Height="25" Margin="0,212,462,0" VerticalAlignment="Top" HorizontalAlignment="Right" TextOptions.TextHintingMode="Animated" HorizontalContentAlignment="Center"/>
+<Mimic MimicTemplate="{StaticResource AnalogFloatBoxMF}" Unit="A_MF09_01" Param0="OpeningCommand" RenderTransformOrigin="0.667,0.572"   
+	Width="60" Height="27.96" Margin="15,0,0,262" VerticalAlignment="Bottom" HorizontalAlignment="Left" TextOptions.TextHintingMode="Animated" HorizontalContentAlignment="Center" d:LayoutOverrides="VerticalAlignment"/>
+<Mimic MimicTemplate="{StaticResource AnalogFloatBoxMF}" Unit="A_MF09_02" Param0="OpeningCommand" RenderTransformOrigin="0.667,0.572"   
+	Width="60" Height="27.96" Margin="76,0,0,262" VerticalAlignment="Bottom" HorizontalAlignment="Left" TextOptions.TextHintingMode="Animated" HorizontalContentAlignment="Center" d:LayoutOverrides="VerticalAlignment"/>
+<Mimic MimicTemplate="{StaticResource AnalogFloatBoxMF}" Unit="A_MF09_03" Param0="OpeningCommand" RenderTransformOrigin="0.667,0.572"   
+	Width="60" Height="27.96" Margin="137,0,0,262" VerticalAlignment="Bottom" HorizontalAlignment="Left" TextOptions.TextHintingMode="Animated" HorizontalContentAlignment="Center" d:LayoutOverrides="VerticalAlignment"/>
+<TextBlock Height="19" TextWrapping="Wrap" Width="30" Margin="28,0,0,292" VerticalAlignment="Bottom" HorizontalAlignment="Left"><Run Text="1210"/><LineBreak/><Run/></TextBlock>
+<TextBlock Height="19" TextWrapping="Wrap" Width="30" Margin="91,0,0,292" VerticalAlignment="Bottom" HorizontalAlignment="Left"><Run Text="1205"/><LineBreak/><Run/></TextBlock>
+<TextBlock Height="19" TextWrapping="Wrap" Width="30" Margin="150,0,0,291" VerticalAlignment="Bottom" HorizontalAlignment="Left"><Run Text="1211"/><LineBreak/><Run/></TextBlock>
+<TextBlock Height="19" TextWrapping="Wrap" Text="MF02-1103" Width="69" Margin="288,140,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+<Mimic MimicTemplate="{StaticResource AnalogFloatBoxMF}" Unit="A_MF02_01" Param0="OpeningCommand" RenderTransformOrigin="0.667,0.572"   
+	Width="60" Height="25" Margin="203,159,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" TextOptions.TextHintingMode="Animated" HorizontalContentAlignment="Center"/>
+<Mimic MimicTemplate="{StaticResource AnalogFloatBoxMF}" Unit="A_MF02_02" Param0="OpeningCommand" RenderTransformOrigin="0.667,0.572"   
+	Width="60" Height="25" Margin="288,159,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" TextOptions.TextHintingMode="Animated" HorizontalContentAlignment="Center"/>
+<Mimic MimicTemplate="{StaticResource DigitalFloatBoxMF}" Unit="A_MF03" Param0="ESDActive" RenderTransformOrigin="0.667,0.572"   
+	Width="60" Height="25" Margin="468,159,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" TextOptions.TextHintingMode="Animated" HorizontalContentAlignment="Center"/>
 </Grid>
 </MimicTemplate>
 </ResourceDictionary>
